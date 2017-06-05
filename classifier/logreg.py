@@ -25,11 +25,7 @@ advancedvectorizer = CountVectorizer(ngram_range=(2, 3))
 advancedtrain = advancedvectorizer.fit_transform(trainheadlines)
 advancedmodel = LogisticRegression()
 advancedmodel = advancedmodel.fit(advancedtrain, train["Label"])
-testheadlines = []
-for row in range(0,len(test.index)):
-    testheadlines.append(' '.join(str(x) for x in test.iloc[row,2:27]))
-advancedtest = advancedvectorizer.transform(testheadlines)
-advpredictions = advancedmodel.predict(advancedtest)
+
 
 # Using basic logistic regression with n-grams we get (66 + 147) / (378) = 56% accuracy
 testheadlines = []
