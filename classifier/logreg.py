@@ -1,11 +1,15 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
+from sklearn.utils import shuffle
 
 # Grab the data
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
 data_pos = data[data['Label'] == 1]
 data_neg = data[data['Label'] == 0]
+
+data_neg = shuffle(data_neg)
+data_pos = shuffle(data_pos)
 
 # Split the data into test and training data
 train = pd.concat([data_pos[0:852], data_neg[0:740]])
