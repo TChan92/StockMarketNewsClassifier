@@ -3,6 +3,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.utils import shuffle
 from sklearn import svm
+from sklearn.metrics import accuracy_score
 
 class Classifier():
 	def __init__(self, params):
@@ -25,8 +26,7 @@ class Classifier():
 
 	def predict(self):
 		advpredictions = self._model.predict(self._test)
-		print pd.crosstab(test["Label"], advpredictions, rownames=["Actual"], colnames=["Predicted"])
-
+		print accuracy_score(self._test, advpredictions)
 
 # Grab the data
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
@@ -37,6 +37,6 @@ params1 = {"train": train, "test": test, "model": LogisticRegression()}
 lr = Classifier(params1)
 lr.predict()
 
-params2 = {"train": train, "test": test, "model": svm.SVR()}
-lr = Classifier(params2)
-lr.predict()
+# params2 = {"train": train, "test": test, "model": svm.SVR()}
+# lr = Classifier(params2)
+# lr.predict()
