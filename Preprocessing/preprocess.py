@@ -6,6 +6,13 @@ import numpy as np
 import pandas as pd
 import re
 
+
+def check_type(s):
+	if type(data_pos_list[row]) != str:
+		return s.encode('ascii','replace')
+	return s
+
+
 def remove_quotes(s):
 	if s[0] != 'b':
 		return s
@@ -40,9 +47,11 @@ for row in range(0, len(data_neg.index)):
 for row in range(0, len(data_pos_list)):
 	data_pos_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_pos_list[row]))
 	data_pos_list[row] = remove_quotes(data_pos_list[row])
+	data_pos_list[row] = check_type(data_pos_list[row])
 for row in range(0, len(data_neg_list)):
 	data_neg_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_neg_list[row]))
 	data_neg_list[row] = remove_quotes(data_neg_list[row])
+	data_pos_list[row] = check_type(data_pos_list[row])
 
 vectorizer = CountVectorizer(lowercase=True, stop_words='english',  max_df=1.0, min_df=1, max_features=None,  binary=True, ngram_range=(2,2), token_pattern='[\'\"][a-zA-Z0-9]*[\'\"]')
 pos_data = vectorizer.fit_transform(data_pos_list)
