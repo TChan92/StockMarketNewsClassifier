@@ -1,9 +1,10 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.utils import shuffle
-from sklearn import svm
-from sklearn.metrics import accuracy_score
+from nltk import stem
+from nltk.corpus import stopwords
+from nltk.tokenize import wordpunct_tokenize
+import re
 
 class Classifier():
 	def __init__(self, params):
@@ -23,20 +24,17 @@ class Classifier():
 		for row in range(0, len(self._test.index)):
 			self._testheadlines.append(' '.join(str(x) for x in self._test.iloc[row, 2:27]))
 		self._test = vectorizer.transform(self._testheadlines)
-
-	def predict(self):
 		advpredictions = self._model.predict(self._test)
-		print accuracy_score(self._test, advpredictions)
+		print pd.crosstab(test["Label"], advpredictions, rownames=["Actual"], colnames=["Predicted"])
 
 # Grab the data
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
+stemmer = stem.PorterStemmer()
+for row in range(0, len(data)):
+	data[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data[row]))
 train = data[data['Date'] < '2015-01-01']
 test = data[data['Date'] > '2014-12-31']
 
 params1 = {"train": train, "test": test, "model": LogisticRegression()}
 lr = Classifier(params1)
-lr.predict()
 
-# params2 = {"train": train, "test": test, "model": svm.SVR()}
-# lr = Classifier(params2)
-# lr.predict()

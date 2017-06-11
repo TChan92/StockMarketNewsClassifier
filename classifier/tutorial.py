@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
 
 ### Tutorial Code ###
 # Follow along here : https://www.kaggle.com/ndrewgele/omg-nlp-with-the-djia-and-reddit
