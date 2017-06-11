@@ -7,6 +7,7 @@ from nltk.tokenize import wordpunct_tokenize
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 import re
+from sklearn import ensemble
 
 class Classifier():
 	def __init__(self, params):
@@ -32,14 +33,16 @@ class Classifier():
 
 # Grab the data
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
-stemmer = stem.PorterStemmer()
-for row in range(0, len(data)):
-	data[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data[row]))
 train = data[data['Date'] < '2015-01-01']
 test = data[data['Date'] > '2014-12-31']
 
-params1 = {"train": train, "test": test, "model": LogisticRegression()}
-lr = Classifier(params1)
+# params1 = {"train": train, "test": test, "model": LogisticRegression()}
+# lr = Classifier(params1)
+#
+# params2 = {"train": train, "test": test, "model" : MLPClassifier(hidden_layer_sizes=(90, 80, 70))}
+# lr2 = Classifier(params2)
 
-params2 = {"train": train, "test": test, "model" : MLPClassifier(hidden_layer_sizes=(90, 80, 70))}
-lr2 = Classifier(params2)
+params = {'n_estimators': 500, 'max_depth': 4, 'min_samples_split': 2, 'learning_rate': 0.01, 'loss': 'ls'}
+clf = ensemble.GradientBoostingRegressor(**params)
+params3 = {"train": train, "test": test, "model" : clf}
+lr3 = Classifier(params3)
