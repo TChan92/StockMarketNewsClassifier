@@ -4,6 +4,8 @@ from sklearn.linear_model import LogisticRegression
 from nltk import stem
 from nltk.corpus import stopwords
 from nltk.tokenize import wordpunct_tokenize
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import classification_report, confusion_matrix
 import re
 
 class Classifier():
@@ -25,7 +27,8 @@ class Classifier():
 			self._testheadlines.append(' '.join(str(x) for x in self._test.iloc[row, 2:27]))
 		self._test = vectorizer.transform(self._testheadlines)
 		advpredictions = self._model.predict(self._test)
-		print pd.crosstab(test["Label"], advpredictions, rownames=["Actual"], colnames=["Predicted"])
+		print (confusion_matrix(test["Label"], advpredictions))
+		print(classification_report(test["Label"], advpredictions))
 
 # Grab the data
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
@@ -38,3 +41,5 @@ test = data[data['Date'] > '2014-12-31']
 params1 = {"train": train, "test": test, "model": LogisticRegression()}
 lr = Classifier(params1)
 
+params2 = {"train": train, "test": test, "model" : MLPClassifier(hidden_layer_sizes=(90, 80, 70))}
+lr2 = Classifier(params2)
