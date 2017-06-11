@@ -4,6 +4,8 @@ from nltk.tokenize import wordpunct_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 import re
+import numpy as np
+import random
 
 
 def check_type(s):
@@ -25,12 +27,12 @@ def remove_quotes(s):
 class Preprocess():
 
 	def __init__(self):
-		self.pos_data, self.neg_data = self.preprocess()
+		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess()
 
 	def preprocess(self):
 		# Grab our data into pandas dataframe
 		stemmer = stem.PorterStemmer()
-		data = pd.read_csv('../data/Combined_News_DJIA.csv')
+		data = pd.read_csv('data/Combined_News_DJIA.csv')
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
@@ -58,14 +60,26 @@ class Preprocess():
 			data_pos_list[row] = check_type(data_pos_list[row])
 			data_neg_list[row] = remove_quotes(data_neg_list[row])
 
-		vectorizer = CountVectorizer(lowercase=True, stop_words='english',  max_df=1.0, min_df=1, max_features=None,  binary=True, ngram_range=(2,2), token_pattern='[\'\"][a-zA-Z0-9]*[\'\"]')
-		pos_data = vectorizer.fit_transform(data_pos_list)
-		neg_data = vectorizer.transform(data_neg_list)
+		# random.shuffle(data_pos_list)
+		# random.shuffle(data_neg_list)
 
-		return pos_data, neg_data
+		pos_split = int(len(data_pos_list) * .8)
+		neg_split = int(len(data_neg_list) * .8)
+
+		# Split the data
+		data_train = data_pos_list[:pos_split] + data_neg_list[:neg_split]
+		data_test = data_pos_list[pos_split:] + data_neg_list[neg_split:]
+		y_train = np.append(np.ones((1, pos_split)), (np.zeros((1, neg_split))))
+		y_test = np.append(np.ones((1, len(data_pos_list) - pos_split)), np.zeros((1, len(data_neg_list) - neg_split)))
+
+		vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2,3))
+		data_train = vectorizer.fit_transform(data_train)
+		data_test = vectorizer.transform(data_test)
+
+		return data_train, data_test, y_train, y_test
 
 	def get_results(self):
-		return [self.pos_data, self.neg_data]
+		return [self.data_train, self.data_test, self.y_train, self.y_test]
 
 def main():
 	preprocess = Preprocess()
