@@ -3,7 +3,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.utils import shuffle
 from sklearn import svm
-from sklearn.metrics import accuracy_score
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import classification_report, confusion_matrix
 
 # Grab the data
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
@@ -20,19 +21,17 @@ test = pd.concat([data_pos[852:], data_neg[740:]])
 # Now that we have th functions covered, lets create the training headlines
 trainheadlines = []
 for row in range(0, len(train.index)):
-    trainheadlines.append(' '.join(str(x) for x in train.iloc[row,2:27]))
+	trainheadlines.append(' '.join(str(x) for x in train.iloc[row, 2:27]))
 
 # Now lets try to improve our accuracy using n-grams
 advancedvectorizer = CountVectorizer(ngram_range=(2, 3))
 advancedtrain = advancedvectorizer.fit_transform(trainheadlines)
-advancedmodel = LogisticRegression()
+advancedmodel = MLPClassifier(hidden_layer_sizes=(90, 80, 70))
 advancedmodel = advancedmodel.fit(advancedtrain, train["Label"])
 
-# Using basic logistic regression with n-grams we get (66 + 147) / (378) = 56% accuracy
 testheadlines = []
-for row in range(0,len(test.index)):
-    testheadlines.append(' '.join(str(x) for x in test.iloc[row,2:27]))
+for row in range(0, len(test.index)):
+	testheadlines.append(' '.join(str(x) for x in test.iloc[row, 2:27]))
 advancedtest = advancedvectorizer.transform(testheadlines)
 advpredictions = advancedmodel.predict(advancedtest)
-print pd.crosstab(test["Label"], advpredictions, rownames=["Actual"], colnames=["Predicted"])
-print accuracy_score(test["Label"], advpredictions)
+print (confusion_matrix(test["Label"], advpredictions))
