@@ -2,6 +2,7 @@ from nltk import stem
 from nltk.corpus import stopwords
 from nltk.tokenize import wordpunct_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
+from collections import deque
 import pandas as pd
 import re
 import numpy as np
@@ -29,12 +30,28 @@ class Preprocess():
 	def __init__(self):
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess()
 
+	def offset_data(self, n,pos, neg):
+		offset_pos = pos[:] # copy by value
+		offset_neg = neg[:] 
+		label = "Top"
+		if(n  == int(n) ):
+			for ii in range(1,21):
+				curLabel = label + str(ii)
+				offset_pos[curLabel] = pos[curLabel].shift(n)
+				offset_neg[curLabel] = neg[curLabel].shift(n)
+		return offset_pos, offset_neg
+
 	def preprocess(self):
 		# Grab our data into pandas dataframe
 		stemmer = stem.PorterStemmer()
-		data = pd.read_csv('data/Combined_News_DJIA.csv')
+		data = pd.read_csv('../data/Combined_News_DJIA.csv')
+
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
+
+		num_of_days = 1
+		# offset headlines by n days
+		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
 
 		# Remove the stop words
 		stop = stopwords.words('english')
@@ -45,6 +62,8 @@ class Preprocess():
 		data_pos_list = []
 		data_neg_list = []
 		for row in range(0, len(data_pos.index)):
+			# if(row == 1):
+			# 	print data_pos.iloc[row, 2:27]
 			data_pos_list.append(' '.join(str(x) for x in data_pos.iloc[row,2:27]))
 		for row in range(0, len(data_neg.index)):
 			data_neg_list.append(' '.join(str(x) for x in data_neg.iloc[row,2:27]))
