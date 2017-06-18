@@ -1,4 +1,5 @@
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.externals import joblib
 
 class Classifier():
 	def __init__(self, params):
@@ -8,6 +9,10 @@ class Classifier():
 		self._test_x = params["test_x"]
 		self._test_y = params["test_y"]
 		self._model = self._model.fit(self._train_x, self._train_y)
+		joblib.dump(self._model, params["memento"])
+		joblib.dump(self._test_x, 'data/testx.pkl')
+		joblib.dump(self._test_y, 'data/testy.pkl')
+
 		predictions = self._model.predict(self._test_x)
 		cm = confusion_matrix(self._test_y, predictions)
 		print (cm)
