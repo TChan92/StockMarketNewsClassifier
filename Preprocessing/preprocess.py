@@ -61,7 +61,7 @@ class Preprocess():
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
-		num_of_days = 1
+		num_of_days = 0
 		# offset headlines by n days
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
 
@@ -70,6 +70,8 @@ class Preprocess():
 		# for line in data_pos:
 		#	line = [l.lower() for l in wordpunct_tokenize(line) if l.lower() not in stop]
 
+		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
+		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 		# Put the data into a vectors
 		data_pos_list = []
 		data_neg_list = []
@@ -99,8 +101,8 @@ class Preprocess():
 		# random.shuffle(data_pos_list)
 		# random.shuffle(data_neg_list)
 
-		pos_split = int(len(data_pos_list) * .8)
-		neg_split = int(len(data_neg_list) * .8)
+		# pos_split = int(len(data_pos_list) * .8)
+		# neg_split = int(len(data_neg_list) * .8)
 
 		# Split the data
 		data_train = data_pos_list[:pos_split] + data_neg_list[:neg_split]
