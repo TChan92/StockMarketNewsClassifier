@@ -1,7 +1,6 @@
 from nltk import stem
 from nltk.tokenize import wordpunct_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfVectorizer
 from collections import deque
 import pandas as pd
 import re
@@ -39,10 +38,9 @@ def get_sentiment(s):
 
 class Preprocess():
 	def __init__(self, add_sentiment=False):
-		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
+  		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess(add_sentiment)
 		self._add_sentiment = add_sentiment
-		self.feature_names = []
 
 	def offset_data(self, n, pos, neg):
 		offset_pos = pos[:]  # copy by value
@@ -63,7 +61,7 @@ class Preprocess():
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
-		num_of_days = 0
+		num_of_days = 1
 		# offset headlines by n days
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
 
@@ -71,9 +69,6 @@ class Preprocess():
 		# stop = stopwords.words('english')
 		# for line in data_pos:
 		#	line = [l.lower() for l in wordpunct_tokenize(line) if l.lower() not in stop]
-
-		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
-		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 
 		# Put the data into a vectors
 		data_pos_list = []
@@ -104,8 +99,8 @@ class Preprocess():
 		# random.shuffle(data_pos_list)
 		# random.shuffle(data_neg_list)
 
-		# pos_split = int(len(data_pos_list) * .8)
-		# neg_split = int(len(data_neg_list) * .8)
+		pos_split = int(len(data_pos_list) * .8)
+		neg_split = int(len(data_neg_list) * .8)
 
 		# Split the data
 		data_train = data_pos_list[:pos_split] + data_neg_list[:neg_split]
@@ -126,8 +121,6 @@ class Preprocess():
 		# vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 		data_train = self.vectorizer.fit_transform(data_train)
 		data_test = self.vectorizer.transform(data_test)
-		self.feature_names = self.vectorizer.get_feature_names()
-
 
 		if (add_sentiment):
 			train_sent = csr_matrix(train_sent)
@@ -155,8 +148,7 @@ class Preprocess():
 			test_sent = csr_matrix(test_sent)
 			result = hstack((result, test_sent))
 
-		return result
-
+		 return result
 
 def main():
 	preprocess = Preprocess()
