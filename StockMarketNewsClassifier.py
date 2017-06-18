@@ -13,7 +13,6 @@ data_train, data_test, y_train, y_test = results[0], results[1], results[2], res
 
 clf = MLPClassifier(hidden_layer_sizes=(90, 80, 70), solver='sgd')
 
-
 params1 = {"train_x": data_train, "train_y": y_train, "test_x": data_test, "test_y": y_test, "model": clf}
 lr = CL.Classifier(params1)
 
@@ -39,3 +38,5 @@ def demo():
           result += str(prob[0][1] )    
 
         print result 
+
+demo()

@@ -38,7 +38,9 @@ def get_sentiment(s):
 
 class Preprocess():
 	def __init__(self, add_sentiment=False):
+  		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess(add_sentiment)
+		self._add_sentiment = add_sentiment
 
 	def offset_data(self, n, pos, neg):
 		offset_pos = pos[:]  # copy by value
@@ -116,9 +118,9 @@ class Preprocess():
 				sentiment = get_sentiment(data_test[row])
 				test_sent.append([sentiment['neg'], sentiment['pos']])
 
-		vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
-		data_train = vectorizer.fit_transform(data_train)
-		data_test = vectorizer.transform(data_test)
+		# vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
+		data_train = self.vectorizer.fit_transform(data_train)
+		data_test = self.vectorizer.transform(data_test)
 
 		if (add_sentiment):
 			train_sent = csr_matrix(train_sent)
@@ -131,6 +133,22 @@ class Preprocess():
 	def get_results(self):
 		return [self.data_train, self.data_test, self.y_train, self.y_test]
 
+ 	def transform_data(self, data):          
+		 line = data
+		 stemmer = stem.PorterStemmer()
+		 stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', line))
+		 line = check_type(line)
+		 line = remove_quotes(line)
+		 result = self.vectorizer.transform([line])
+		 
+		 if(self._add_sentiment):
+  			test_sent = []
+  			sentiment = get_sentiment(line)
+			test_sent.append([sentiment['neg'], sentiment['pos']])
+			test_sent = csr_matrix(test_sent)
+			result = hstack((result, test_sent))
+
+		 return result
 
 def main():
 	preprocess = Preprocess()
