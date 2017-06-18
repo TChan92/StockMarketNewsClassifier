@@ -15,6 +15,11 @@ data_train, data_test, y_train, y_test = results[0], results[1], results[2], res
 params = {'n_estimators': 500, 'max_depth': 4, 'min_samples_split': 2, 'learning_rate': 0.01, 'loss': 'ls'}
 clf = ensemble.GradientBoostingRegressor(**params)
 
+# clf = MLPClassifier(hidden_layer_sizes=(90, 80, 70), solver='sgd')
+
+clf = SGDClassifier(shuffle=False, n_iter=1000, loss='squared_hinge')
+
+params1 = {"train_x": data_train, "train_y": y_train, "test_x": data_test, "test_y": y_test, "model": clf}
 params1 = {
 	"train_x": data_train,
 	"train_y": y_train,
