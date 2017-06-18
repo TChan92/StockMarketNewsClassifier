@@ -11,7 +11,9 @@ results = preprocess.get_results()
 data_train, data_test, y_train, y_test = results[0], results[1], results[2], results[3]
 # clf = LogisticRegression()
 
-clf = MLPClassifier(hidden_layer_sizes=(90, 80, 70), solver='sgd')
+# clf = MLPClassifier(hidden_layer_sizes=(90, 80, 70), solver='sgd')
+
+clf = SGDClassifier(shuffle=False, n_iter=1000, loss='squared_hinge')
 
 params1 = {"train_x": data_train, "train_y": y_train, "test_x": data_test, "test_y": y_test, "model": clf}
 lr = CL.Classifier(params1)

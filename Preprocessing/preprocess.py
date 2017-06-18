@@ -1,6 +1,7 @@
 from nltk import stem
 from nltk.tokenize import wordpunct_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from collections import deque
 import pandas as pd
 import re
@@ -61,7 +62,7 @@ class Preprocess():
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
-		num_of_days = 1
+		num_of_days = 0
 		# offset headlines by n days
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
 
@@ -69,6 +70,9 @@ class Preprocess():
 		# stop = stopwords.words('english')
 		# for line in data_pos:
 		#	line = [l.lower() for l in wordpunct_tokenize(line) if l.lower() not in stop]
+
+		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
+		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 
 		# Put the data into a vectors
 		data_pos_list = []
@@ -99,8 +103,8 @@ class Preprocess():
 		# random.shuffle(data_pos_list)
 		# random.shuffle(data_neg_list)
 
-		pos_split = int(len(data_pos_list) * .8)
-		neg_split = int(len(data_neg_list) * .8)
+		# pos_split = int(len(data_pos_list) * .8)
+		# neg_split = int(len(data_neg_list) * .8)
 
 		# Split the data
 		data_train = data_pos_list[:pos_split] + data_neg_list[:neg_split]
@@ -132,23 +136,22 @@ class Preprocess():
 
 	def get_results(self):
 		return [self.data_train, self.data_test, self.y_train, self.y_test]
+	def transform_data(self, data):
+		line = data
+		stemmer = stem.PorterStemmer()
+		stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', line))
+		line = check_type(line)
+		line = remove_quotes(line)
+		result = self.vectorizer.transform([line])
 
- 	def transform_data(self, data):          
-		 line = data
-		 stemmer = stem.PorterStemmer()
-		 stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', line))
-		 line = check_type(line)
-		 line = remove_quotes(line)
-		 result = self.vectorizer.transform([line])
-		 
-		 if(self._add_sentiment):
-  			test_sent = []
-  			sentiment = get_sentiment(line)
+		if(self._add_sentiment):
+			test_sent = []
+			sentiment = get_sentiment(line)
 			test_sent.append([sentiment['neg'], sentiment['pos']])
 			test_sent = csr_matrix(test_sent)
 			result = hstack((result, test_sent))
 
-		 return result
+		return result
 
 def main():
 	preprocess = Preprocess()
