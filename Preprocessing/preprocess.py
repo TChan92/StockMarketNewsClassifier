@@ -37,10 +37,11 @@ def get_sentiment(s):
 
 
 class Preprocess():
-	def __init__(self, add_sentiment=False):
+	def __init__(self, add_sentiment=False, stemming=True):
   		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess(add_sentiment)
 		self._add_sentiment = add_sentiment
+		self.stemming = stemming
 
 	def offset_data(self, n, pos, neg):
 		offset_pos = pos[:]  # copy by value
@@ -85,14 +86,16 @@ class Preprocess():
 		# Stem and remove the b'' surrounding every headline
 		# Also turns unicode into strings
 		for row in range(0, len(data_pos_list)):
-			data_pos_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_pos_list[row]))
+			if self.stemming:
+				data_pos_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_pos_list[row]))
 			data_pos_list[row] = check_type(data_pos_list[row])
 			data_pos_list[row] = remove_quotes(data_pos_list[row])
 		# sentiment = get_sentiment(data_pos_list[row])
 		# data_pos_list[row] = [data_pos_list[row], sentiment['neg'], sentiment['pos']]
 
 		for row in range(0, len(data_neg_list)):
-			data_neg_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_neg_list[row]))
+			if self.stemming:
+				data_neg_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_neg_list[row]))
 			data_neg_list[row] = check_type(data_neg_list[row])
 			data_neg_list[row] = remove_quotes(data_neg_list[row])
 		# sentiment = get_sentiment(data_neg_list[row])
