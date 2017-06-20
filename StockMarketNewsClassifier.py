@@ -6,7 +6,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import LogisticRegression
 import numpy as np
 
-preprocess = PP.Preprocess(add_sentiment=True)
+preprocess = PP.Preprocess(add_sentiment=True, stemming=True)
 results = preprocess.get_results()
 
 data_train, data_test, y_train, y_test = results[0], results[1], results[2], results[3]
