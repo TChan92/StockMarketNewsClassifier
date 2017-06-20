@@ -39,9 +39,9 @@ def get_sentiment(s):
 class Preprocess():
 	def __init__(self, add_sentiment=False, stemming=True):
   		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
+		self.stemming = stemming
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess(add_sentiment)
 		self._add_sentiment = add_sentiment
-		self.stemming = stemming
 
 	def offset_data(self, n, pos, neg):
 		offset_pos = pos[:]  # copy by value
