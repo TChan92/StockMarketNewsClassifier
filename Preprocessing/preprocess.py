@@ -37,8 +37,8 @@ def get_sentiment(s):
 
 
 class Preprocess():
-	def __init__(self, add_sentiment=False, stemming=True):
-  		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
+	def __init__(self, add_sentiment=True, stemming=True):
+		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 		self.stemming = stemming
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess(add_sentiment)
 		self._add_sentiment = add_sentiment
@@ -66,11 +66,6 @@ class Preprocess():
 		# offset headlines by n days
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
 
-		# Remove the stop words
-		# stop = stopwords.words('english')
-		# for line in data_pos:
-		#	line = [l.lower() for l in wordpunct_tokenize(line) if l.lower() not in stop]
-
 		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
 		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 		# Put the data into a vectors
@@ -90,22 +85,12 @@ class Preprocess():
 				data_pos_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_pos_list[row]))
 			data_pos_list[row] = check_type(data_pos_list[row])
 			data_pos_list[row] = remove_quotes(data_pos_list[row])
-		# sentiment = get_sentiment(data_pos_list[row])
-		# data_pos_list[row] = [data_pos_list[row], sentiment['neg'], sentiment['pos']]
 
 		for row in range(0, len(data_neg_list)):
 			if self.stemming:
 				data_neg_list[row] = stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', data_neg_list[row]))
 			data_neg_list[row] = check_type(data_neg_list[row])
 			data_neg_list[row] = remove_quotes(data_neg_list[row])
-		# sentiment = get_sentiment(data_neg_list[row])
-		# data_neg_list[row] = [data_neg_list[row], sentiment['neg'], sentiment['pos']]
-
-		# random.shuffle(data_pos_list)
-		# random.shuffle(data_neg_list)
-
-		# pos_split = int(len(data_pos_list) * .8)
-		# neg_split = int(len(data_neg_list) * .8)
 
 		# Split the data
 		data_train = data_pos_list[:pos_split] + data_neg_list[:neg_split]
@@ -138,22 +123,23 @@ class Preprocess():
 	def get_results(self):
 		return [self.data_train, self.data_test, self.y_train, self.y_test]
 
- 	def transform_data(self, data):          
-		 line = data
-		 stemmer = stem.PorterStemmer()
-		 stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', line))
-		 line = check_type(line)
-		 line = remove_quotes(line)
-		 result = self.vectorizer.transform([line])
-		 
-		 if(self._add_sentiment):
-  			test_sent = []
-  			sentiment = get_sentiment(line)
+	def transform_data(self, data):
+		line = data
+		stemmer = stem.PorterStemmer()
+		stemmer.stem(re.sub('[^A-Za-z0-9.,\'\" ]+', '', line))
+		line = check_type(line)
+		line = remove_quotes(line)
+		result = self.vectorizer.transform([line])
+
+		if (self._add_sentiment):
+			test_sent = []
+			sentiment = get_sentiment(line)
 			test_sent.append([sentiment['neg'], sentiment['pos']])
 			test_sent = csr_matrix(test_sent)
 			result = hstack((result, test_sent))
 
-		 return result
+		return result
+
 
 def main():
 	preprocess = Preprocess()
