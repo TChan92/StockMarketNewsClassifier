@@ -58,7 +58,7 @@ coeffdf = coeffdf.sort_values(['Coefficient', 'Word'], ascending=[0, 1])
 #print coeffdf.head(10)
 
 # Now lets try to improve our accuracy using n-grams
-advancedvectorizer = CountVectorizer(ngram_range=(2,3))
+advancedvectorizer = CountVectorizer(ngram_range=(2,2))
 advancedtrain = advancedvectorizer.fit_transform(trainheadlines)
 advancedmodel = LogisticRegression()
 advancedmodel = advancedmodel.fit(advancedtrain, train["Label"])
