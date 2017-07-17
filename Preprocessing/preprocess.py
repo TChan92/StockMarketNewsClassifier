@@ -57,26 +57,25 @@ class Preprocess():
 	def preprocess(self, add_sentiment):
 		# Grab our data into pandas dataframe
 		stemmer = stem.PorterStemmer()
-		data = pd.read_csv('data/Combined_News_DJIA.csv')
+		data = pd.read_csv('data/Combined_Economics_Saved.csv')
 
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
 		num_of_days = 0
 		# offset headlines by n days
-		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
+		# data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg)
 
 		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
 		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 		# Put the data into a vectors
 		data_pos_list = []
 		data_neg_list = []
+		num_headlines = 10
 		for row in range(0, len(data_pos.index)):
-			# if(row == 1):
-			# 	print data_pos.iloc[row, 2:27]
-			data_pos_list.append(' '.join(str(x) for x in data_pos.iloc[row, 2:27]))
+			data_pos_list.append(' '.join(str(x) for x in data_pos.iloc[row, 2:num_headlines + 2]))
 		for row in range(0, len(data_neg.index)):
-			data_neg_list.append(' '.join(str(x) for x in data_neg.iloc[row, 2:27]))
+			data_neg_list.append(' '.join(str(x) for x in data_neg.iloc[row, 2:num_headlines + 2]))
 
 		# Stem and remove the b'' surrounding every headline
 		# Also turns unicode into strings
