@@ -21,7 +21,7 @@ def date_to_timestamp(date_string):
 def get_reddit():
 	reddit = praw.Reddit(client_id='UtElOjElipazeg',
 						 client_secret='HMlvQvokBL6fzHe0mF6aV4qtOZ8',
-						 password='',
+						 password='naturallanguageprocessing',
 						 user_agent='nlp-bot-2017',
 						 username='nlp-bot-2017')
 	return reddit
@@ -35,11 +35,11 @@ def subreddit_search(subreddit, search_string, num_headlines):
 '''
 CALLING CODE
 '''
-SUBREDDIT = "stocks"
-NUM_HEADLINES = 10
+SUBREDDIT = "news"
+NUM_HEADLINES = 15
 
 subreddit = get_reddit().subreddit(SUBREDDIT)
-data = pd.read_csv('../data/Combined_News_DJIA.csv')
+data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
 dates = list(data["Date"])
 labels = list(data["Label"])
 incorrectly_formatted = []
