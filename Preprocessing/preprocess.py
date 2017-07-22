@@ -54,15 +54,19 @@ class Preprocess():
 				offset_neg[curLabel] = neg[curLabel].shift(n)
 		return offset_pos, offset_neg
 
+	def transform_date(self, date):
+		date = date.split("/")
+		return date[2] + "-" + date[0] + "-" + date[1]
+
 	def preprocess(self, add_sentiment):
 		# Grab our data into pandas dataframe
 		stemmer = stem.PorterStemmer()
-		data = pd.read_csv('data/Combined_stocks_Saved.csv')
-
+		data = pd.read_csv('data/Combined_Economics_Saved.csv')
+		data['Date'] = data['Date'].map(lambda a: self.transform_date(a))
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
-		num_of_days = 0
+		num_of_days = +2
 		# offset headlines by n days
 		num_headlines = 10
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg, num_headlines)

@@ -17,11 +17,11 @@ def create_header(num_headlines):
 def date_to_timestamp(date_string):
 	return int(time.mktime(datetime.datetime.strptime(date_string, "%Y-%m-%d-%H:%M:%S").timetuple()))
 
-
+# Password has been changed, ask Adam & Tim for it
 def get_reddit():
 	reddit = praw.Reddit(client_id='UtElOjElipazeg',
 						 client_secret='HMlvQvokBL6fzHe0mF6aV4qtOZ8',
-						 password='alottafish',
+						 password='',
 						 user_agent='nlp-bot-2017',
 						 username='nlp-bot-2017')
 	return reddit

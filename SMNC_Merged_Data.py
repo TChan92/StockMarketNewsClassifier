@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-
+from sklearn import svm
 
 def get_valid_dates(d1, d2, d3):
 	d1_train, d1_test = get_dates(d1, False)
@@ -41,8 +41,8 @@ AGGREGATED_TEST = []
 
 # Grab the wn data
 data_wn = pd.read_csv('data/Combined_News_DJIA.csv')
-data_e = pd.read_csv('data/Combined_Economics_Saved.csv')
-data_stocks = pd.read_csv('data/Combined_stocks_Saved.csv')
+data_e = pd.read_csv('data/Combined_News_DJIA.csv')
+data_stocks = pd.read_csv('data/Combined_News_DJIA.csv')
 
 
 valid_headlines_train = []
@@ -58,7 +58,7 @@ for row in range(0, len(train_stocks.index)):
 
 vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 train_headlines_stocks = vectorizer.fit_transform(train_headlines_stocks)
-clf = SGDClassifier(shuffle=False, n_iter=1000, loss='squared_hinge')
+clf = svm.SVC(kernel='linear')
 
 clf = clf.fit(train_headlines_stocks, train_stocks["Label"])
 test_headlines_stocks = []
@@ -70,6 +70,28 @@ test_headlines_stocks = vectorizer.transform(test_headlines_stocks)
 AGGREGATED_TRAIN = clf.predict(train_headlines_stocks)
 AGGREGATED_TEST = clf.predict(test_headlines_stocks)
 
+''' ------------------------------------------------------------ '''
+train_e = data_wn[data_wn['Date'] < '2015-11-30']
+test_e = data_wn[data_wn['Date'] > '2015-12-01']
+
+train_headlines_e = []
+for row in range(0, len(train_e.index)):
+	if (train_e.iloc[row, 0] in valid_headlines_train):
+		train_headlines_e.append(' '.join(str(x) for x in train_e.iloc[row, 2:27]))
+
+vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
+train_headlines_e = vectorizer.fit_transform(train_headlines_e)
+clf = LogisticRegression()
+
+clf = clf.fit(train_headlines_e, train_stocks["Label"])
+test_headlines_wn = []
+for row in range(0, len(test_e.index)):
+	if (test_e.iloc[row, 0] in valid_headlines_test):
+		test_headlines_wn.append(' '.join(str(x) for x in test_e.iloc[row, 2:27]))
+test_headlines_wn = vectorizer.transform(test_headlines_wn)
+
+AGGREGATED_TRAIN = zip(AGGREGATED_TRAIN, clf.predict(train_headlines_e))
+AGGREGATED_TEST = zip(AGGREGATED_TEST, clf.predict(test_headlines_wn))
 ''' ------------------------------------------------------------ '''
 
 # WN
