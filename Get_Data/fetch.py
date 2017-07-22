@@ -35,7 +35,7 @@ def subreddit_search(subreddit, search_string, num_headlines):
 '''
 CALLING CODE
 '''
-SUBREDDIT = "Economics"
+SUBREDDIT = "stocks"
 NUM_HEADLINES = 10
 
 subreddit = get_reddit().subreddit(SUBREDDIT)
@@ -52,12 +52,13 @@ with open("../data/Combined_" + SUBREDDIT + ".csv", 'w') as f:
 		time.sleep(1)
 		data_row = [dates[i], str(labels[i])]
 		for submission in subreddit_search(subreddit, query_string, NUM_HEADLINES):
-			for ch in [",", "\n", "\t","\r"]:
+			for ch in [",", "\n", "\t", "\r"]:
 				submission.title = submission.title.replace(ch, "")
 			data_row.append(submission.title)
-		if(len(data_row) == 2 + NUM_HEADLINES):
+		if (len(data_row) == 2 + NUM_HEADLINES):
 			data_row = check_type(','.join(data_row) + "\n")
 			f.write(data_row)
 		else:
 			pass
+		print i
 f.close()
