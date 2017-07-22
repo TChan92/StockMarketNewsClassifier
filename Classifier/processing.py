@@ -10,8 +10,8 @@ class Classifier():
 		self._test_x = params["test_x"]
 		self._test_y = params["test_y"]
 		self._model = self._model.fit(self._train_x, self._train_y)
-		c = np.argpartition(self._model.coef_[0], 10)[10:]
-		print c
+		# c = np.argpartition(self._model.coef_[0], 10)[10:]
+		# print c
 		joblib.dump(self._model, params["memento"])
 		joblib.dump(self._test_x, 'data/testx.pkl')
 		joblib.dump(self._test_y, 'data/testy.pkl')

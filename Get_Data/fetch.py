@@ -35,27 +35,30 @@ def subreddit_search(subreddit, search_string, num_headlines):
 '''
 CALLING CODE
 '''
-SUBREDDIT = "Economics"
-NUM_HEADLINES = 25
+SUBREDDIT = "stocks"
+NUM_HEADLINES = 10
 
 subreddit = get_reddit().subreddit(SUBREDDIT)
 data = pd.read_csv('../data/Combined_News_DJIA.csv')
 dates = list(data["Date"])
 labels = list(data["Label"])
-
+incorrectly_formatted = []
 with open("../data/Combined_" + SUBREDDIT + ".csv", 'w') as f:
 	f.write(create_header(NUM_HEADLINES))
 	for i in range(0, len(dates)):
 		d1 = date_to_timestamp(dates[i] + "-00:00:00")
 		d2 = date_to_timestamp(dates[i] + "-23:59:00")
 		query_string = "timestamp:" + str(d1) + ".." + str(d2)
-		time.sleep(6)
+		time.sleep(1)
 		data_row = [dates[i], str(labels[i])]
 		for submission in subreddit_search(subreddit, query_string, NUM_HEADLINES):
-			data_row.append(submission.title.replace(",", ""))
-		print data_row
-		assert len(data_row) == (2 + NUM_HEADLINES)
-		data_row = check_type(','.join(data_row) + "\n")
-		f.write(data_row)
-		print "ROWS COMPLETE " + str(i)
+			for ch in [",", "\n", "\t", "\r"]:
+				submission.title = submission.title.replace(ch, "")
+			data_row.append(submission.title)
+		if (len(data_row) == 2 + NUM_HEADLINES):
+			data_row = check_type(','.join(data_row) + "\n")
+			f.write(data_row)
+		else:
+			pass
+		print i
 f.close()
