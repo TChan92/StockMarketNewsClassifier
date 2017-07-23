@@ -21,7 +21,7 @@ def date_to_timestamp(date_string):
 def get_reddit():
 	reddit = praw.Reddit(client_id='UtElOjElipazeg',
 						 client_secret='HMlvQvokBL6fzHe0mF6aV4qtOZ8',
-						 password='naturallanguageprocessing',
+						 password='',
 						 user_agent='nlp-bot-2017',
 						 username='nlp-bot-2017')
 	return reddit
