@@ -74,9 +74,9 @@ There are many ways that Natural Language Processing could assist in the movemen
 
 There are also researchers that used NLP and conducted a Textual Analysis for stock price prediction. The study lead by Stanford University introduced a system that forecasts company's’ stock price changes and classifies them into UP, DOWN and STAY. By building a well defined corpus that aligns the descriptions of financial events, the system’s Unigram model could predict the stock trend with an accuracy of 54.4\%. The low accuracy is because that  newspaper articles reflect not only new information about the company, but also the perspective and options of third parties, which may require more time for the market to digest (Lee et al, 2014).\\
 
-Two researchers one from Iona College and the other from University of Arizona worked together and performed textual analysis of the predicting the stock market using recent financial news. The researchers approached the problem using prediction with machine learning using financial news articles analysis where they researched with different textual representations, such as bag of words, noun phrases, and named entities (Schumaker, R. P., & Chen, H. 2009).\\
+Two researchers one from Iona College and the other from University of Arizona worked together and performed textual analysis of the predicting the stock market using recent financial news. The researchers approached the problem using prediction with machine learning using financial news articles analysis where they researched with different textual representations, such as bag of words, noun phrases, and named entities (Schumaker, R. P., \& Chen, H. 2009).\\
 
-The researchers investigated 9,211 financial news articles and over a five week period of 10,259,042 stock quotes that covered 500 of S&P stocks. They started their analyses of a stock price twenty minutes after a news article was released. A support vector machine (SVM) was used for discrete numeric prediction and models containing different stock-specific variables. They showed that the model that had both article terms and stock price at the time of the of the articles release was the closest prediction to the actual stock price. They achieved a prediction of the price moving in the same direction as the future price with a 57.1\% accuracy and their highest return was 2.06\% which used a simulated trading engine. They also investigated different textual representations and found that Proper noun scheme performs better the bag of words (Schumaker, R. P., & Chen, H. 2009).\\
+The researchers investigated 9,211 financial news articles and over a five week period of 10,259,042 stock quotes that covered 500 of S\&P stocks. They started their analyses of a stock price twenty minutes after a news article was released. A support vector machine (SVM) was used for discrete numeric prediction and models containing different stock-specific variables. They showed that the model that had both article terms and stock price at the time of the of the articles release was the closest prediction to the actual stock price. They achieved a prediction of the price moving in the same direction as the future price with a 57.1\% accuracy and their highest return was 2.06\% which used a simulated trading engine. They also investigated different textual representations and found that Proper noun scheme performs better the bag of words (Schumaker, R. P., \& Chen, H. 2009).\\
 
 One report used sentiment analysis on Twitter posts to try and predict the daily closing values of the Dow Jones. The focus was on finding out whether the mood of the society was correlated to the stock price of the Dow Jones. Two different sentiment analysis tools were used: OpinionFinder and Google Profile of Mood States. OpinionFinder analyzed only a positive and negative moods, while Google Profile of Mood States would measure mood in term of 6 different dimensions. Correlation between mood and stock price was determined using Granger causality analysis. A Self-Organizing Fuzzy Neural Network was used to do the actual classification, which achieved an accuracy of 86.7\%. Different moods were found to give different classification accuracies (Bollen et. al., 2010).\\
 
@@ -115,7 +115,7 @@ After receiving feedback, the baseline was extended in an aim to improve the acc
 \item The offset is an interesting feature which got minimal experimentation in the baseline. Additional offsets were attempted to see if future news insight had an affect on the market.
 
 \item While the headline date was used to split the data, it was never introduced as a feature. It was determined that the date could be pertinent if there were fluctuations around certain seasons or holidays.
-\end{itemize}\\
+\end{itemize}
 
 A problem with the reddit API is that several of the subreddits were young, or were not popular enough to have more than 25 posts per day. This resulted in the new data sets having slightly different distributions and sizes.\\
 
@@ -135,7 +135,7 @@ A problem with the reddit API is that several of the subreddits were young, or w
 \bibliographystyle{acl_natbib}
 \textit{Daily News for Stock Market Prediction}. Kaggle.com. Retrieved 14 May 2017, from \url{https://www.kaggle.com/aaron7sun/stocknews}\\
 
-Bollen, Johan & Mao, Huina & Zeng, Xiao-Jun. (2010). \texttit{Twitter Mood Predicts the Stock Market.} Journal of Computational Science. 2. . 10.1016/j.jocs.2010.12.007. Retrieved 22 July 2017, from \url{https://arxiv.org/pdf/1010.3003.pdf}\\
+Bollen, Johan \& Mao, Huina \& Zeng, Xiao-Jun. (2010). \textit{Twitter Mood Predicts the Stock Market.} Journal of Computational Science. 2. . 10.1016/j.jocs.2010.12.007. Retrieved 22 July 2017, from \url{https://arxiv.org/pdf/1010.3003.pdf}\\
 
 
 \textit{DJI Historical Prices | Dow Jones Industrial Average Stock - Yahoo Finance}. (2017). Finance.yahoo.com. Retrieved 14 May 2017, from \url{https://finance.yahoo.com/quote/\%5EDJI/history?p=\%5EDJI}\\
@@ -144,7 +144,7 @@ G\'el\'e, Andrew. (2016, November). \textit{OMG! NLP with the DJIA and Reddit! |
 
 Lee, H., Surdeanu, M., MacCartney, B., \& Jurafsky, D. (2014, May). \textit{On the Importance of Text Analysis for Stock Price Prediction.} In LREC (pp. 1170-1175). Retrieved 14 May 2017, from \url{http://www.lrec-conf.org/proceedings/lrec2014/pdf/1065_Paper.pdf}\\
 
-Nassirtoussi A.K., Aghabozorgi S., Wah T.Y., Ngo D.L.C. (2015). \texttit{Text mining of news-headlines for FOREX market prediction: A Multi-layer Dimension Reduction Algorithm with semantics and sentiment.} Expert Systems with Applications, Volume 42, Issue 1, 2015, Pages 306-324, ISSN 0957-4174. Retrieved 22 July 2017, from \url{http://www.sciencedirect.com/science/article/pii/S0957417414004801}\\
+Nassirtoussi A.K., Aghabozorgi S., Wah T.Y., Ngo D.L.C. (2015). \textit{Text mining of news-headlines for FOREX market prediction: A Multi-layer Dimension Reduction Algorithm with semantics and sentiment.} Expert Systems with Applications, Volume 42, Issue 1, 2015, Pages 306-324, ISSN 0957-4174. Retrieved 22 July 2017, from \url{http://www.sciencedirect.com/science/article/pii/S0957417414004801}\\
 
 Schumaker, R. P., \& Chen, H. (2009). \textit{Textual analysis of stock market prediction using breaking financial news: The AZFin text system. ACM Transactions on Information Systems (TOIS), 27(2), 12.} Retrieved July 15 2017, from \url{http://dl.acm.org/citation.cfm?id=1462204}\\
 
