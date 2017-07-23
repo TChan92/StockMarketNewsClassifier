@@ -1,0 +1,157 @@
+%
+% File acl2017.tex
+%
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2017}
+\usepackage{times}
+\usepackage{latexsym}
+
+\usepackage{url}
+
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+
+\title{Predicting the Stock Market with NLP}
+
+\author{Author \\
+  Tim Chan \\
+  Adam Dubicki \\
+  Shengzong He \\
+  Lucas Sherman\\
+  Haodong Tau\\
+  {\tt} \\\And
+  V-Number \\
+  803066 \\
+  799637 \\
+  785261 \\
+  711371\\
+  836169\\
+  {\tt} \\}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    ABSTRACT GOES HERE
+\end{abstract}
+
+
+\section{Introduction}
+Description of the problem and why it is important / interesting
+
+\subsection{Data Description}
+The data set for our chosen problem comes from Kaggle: a website which hosts various data mining and machine learning competitions. It was posted in August 2016 by user Aaron7sun ("Daily News for Stock Market Prediction", 2016). Reddit.com is a news aggregation website where users can vote on news headlines. The news headlines in the data set are from the “world news” section. Reddit.com has a large amount of US visitors, resulting in many US specific headlines reaching the top 25 posts daily, despite the focus of the World News section being international headlines.\\
+
+The data is packaged as a 6MB CSV each row containing news headlines and binary class. There are three files, RedditNews.csv, DJIA\_table.csv and Combined\_News\_DJIA.csv. RedditNews.csv contains top 25 news headlines for a given day decided by the number of votes by . DJIA\_table.csv contains the stock data from Yahoo finance, and is based on the Dow Jones Industrial Average. ("DJI Historical Prices - Dow Jones Industrial Average Stock", 2017). \\
+
+The Dow Jones Industrial Average (DJIA) is an indicator of the current state of the American industrial sector. The DJIA indicates how 30 large publicly owned companies based in the US (Microsoft, Verizon, Visa, IBM …) have traded during a standard trading session in the stock market.\\
+
+ The Combined\_News\_DJIA.csv file gives the top news headlines for every given day along with “label” entry saying whether the DJIA rose/stayed or fell. A row contains the Date, DJIA label, and then the top 25 headlines ordered with the number of votes. Most of our working was done with the Combined\_News\_DJIA.csv file.\\
+
+In terms of data distribution the dataset is slightly biased towards the DJIA rising (52\% of the data is class 1). The baseline to improve upon is 52\%, because naively guessing 1 for every classification would yield this accuracy.\\
+
+
+\subsection{Related Work}
+There are many ways that Natural Language Processing could assist in the movement of the  stock market. For example, using the AlchemyData News API provided by IBM could allow machines to gather real-time intelligence on specific stocks, understand and respond to news events, monitor company sentiment and etc. (Sedlak, 2016).\\
+
+There are also researchers that used NLP and conducted a Textual Analysis for stock price prediction. The study lead by Stanford University introduced a system that forecasts company's’ stock price changes and classifies them into UP, DOWN and STAY. By building a well defined corpus that aligns the descriptions of financial events, the system’s Unigram model could predict the stock trend with an accuracy of 54.4\%. The low accuracy is because that  newspaper articles reflect not only new information about the company, but also the perspective and options of third parties, which may require more time for the market to digest (Lee et al, 2014).\\
+
+Two researchers one from Iona College and the other from University of Arizona worked together and performed textual analysis of the predicting the stock market using recent financial news. The researchers approached the problem using prediction with machine learning using financial news articles analysis where they researched with different textual representations, such as bag of words, noun phrases, and named entities (Schumaker, R. P., \& Chen, H. 2009).\\
+
+The researchers investigated 9,211 financial news articles and over a five week period of 10,259,042 stock quotes that covered 500 of S\&P stocks. They started their analyses of a stock price twenty minutes after a news article was released. A support vector machine (SVM) was used for discrete numeric prediction and models containing different stock-specific variables. They showed that the model that had both article terms and stock price at the time of the of the articles release was the closest prediction to the actual stock price. They achieved a prediction of the price moving in the same direction as the future price with a 57.1\% accuracy and their highest return was 2.06\% which used a simulated trading engine. They also investigated different textual representations and found that Proper noun scheme performs better the bag of words (Schumaker, R. P., \& Chen, H. 2009).\\
+
+One report used sentiment analysis on Twitter posts to try and predict the daily closing values of the Dow Jones. The focus was on finding out whether the mood of the society was correlated to the stock price of the Dow Jones. Two different sentiment analysis tools were used: OpinionFinder and Google Profile of Mood States. OpinionFinder analyzed only a positive and negative moods, while Google Profile of Mood States would measure mood in term of 6 different dimensions. Correlation between mood and stock price was determined using Granger causality analysis. A Self-Organizing Fuzzy Neural Network was used to do the actual classification, which achieved an accuracy of 86.7\%. Different moods were found to give different classification accuracies (Bollen et. al., 2010).\\
+
+Predicting the movement of a stock markets is a hard task, especially when we are using text mining techniques on news headlines. The reason why this task is difficult is because news headlines usually don’t correspond to one specific market.\\
+
+Researchers from the Malaysia has performed a study on text mining of news-headlines targeting specifically to the Foreign exchange (FOREX) market prediction. The study resulted the development of a multi-layer dimension reduction algorithm that consisted of three main layers: Semantic Abstraction Layer, Sentiment Integration Layer and Synchronous Targeted Feature Reduction. The proposed algorithm resulted with a model that has accuracy of up to 83.33\% (Nassirtoussi et. al. 2015).\\
+
+It is worth mentioning that in the semantic abstraction layer, the researchers addressed the problem of co-reference in text mining. Co-reference occurs in the situation where two or more words in a text corpus is referring to the same entity. The problem with co-reference in text mining is that it increases the dimension of the mathematical model and decreases the performance of it. By using customized approach of extracting heuristic hypernyms and feature selection, the semantic abstraction layer resolved the issue created by co-reference in a large text corpus. It reduced the unnecessary dimensions in the training model caused co-reference words and increased both the performance and accuracy of the algorithm.\\
+
+
+\section{Methods}
+Below details the methods applied to try and yield the highest accuracy for predicting the stock market. Initially, a baseline was implemented based off a tutorial's code. Afterwards, the baseline was extended based on feedback from other peers.\\
+
+\subsection{Baseline}
+As part of the Kaggle competition, various tutorials are posted to help get users started with processing the dataset, The highest voted tutorial was provided by Kaggle user Andrew G\'el\'e. In the tutorial scikit-learn’s vectorizer is applied to transform the headlines into word vectors. The vectors contain the frequency of bi-grams in the headlines. The vectors are then processed and fitted with logistic regression. This approach yielded an accuracy of 56.3\% (G\'el\'e, 2016).\\
+
+For G\'el\'e’s approach, the dataset was split by date such that all headlines from 2015 onwards were test data. All other headline instances are part of the training set. This split was also used for our experiments for two reasons.\\
+
+First, it aims to minimize multi-day headlines from being part of the training and test set. For example a weeklong event such as the Olympics could be highly correlated with the DJIA rising. If the dataset is shuffled than there is a high probability of these headlines could be split across the training and test set. The classifier would essentially be training and testing on practically the same headlines, generating an optimistic accuracy. By splitting by date, related events shall be mostly segregated into the training and test sets. The only exception to this shall be events at the boundary, which will unavoidably be split among the two sets.\\
+
+Secondly, user Aaron7sun also recommended this split making it very common among other competitors. By using the same split, our results are comparable to the results of other competitors.\\
+
+To begin the experiments, a testing framework was built off the tutorial code in combination with other scikit learn libraries. The experiment setup in python aimed to create a highly iterable framework. The python file created was a preprocessor which would vectorize the data. The preprocessor also performed any data preparation steps such as stemming, stop-word removal and day offsetting.\\
+
+Day offsetting is a minor improvement experimented with where the data is shifted forward or backward a certain amount of days. The regular data has headlines paired with stock results of that current day. This assumes that the headlines have made an impact on the current day. By offsetting, headlines of day i are paired with the binary class for day i +/- o, where o is the offset.\\
+
+Next a generic processor class was created. The processor takes as input a data set from the preprocessor, and a classifier from the python library scikit-learn. The processor splits the data into training and test sets, and trains with the training set. Finally, it forms predictions on the test set and outputs various metrics such as f-measure, accuracy, precision and recall.\\
+
+After experimenting with several classifiers, the 3 best performing classifiers were logistic regression, SVM (linear kernal), and stochastic gradient descent. Through experimentation it was also determined that the a mix of bigrams and trigrams often yielded the highest results.
+
+\subsection{Extending the Baseline}
+After receiving feedback, the baseline was extended in an aim to improve the accuracy.
+\begin{itemize}
+\item The world news data set does not always contain information relevant to the stock market. In an attempt to get more pertinent data, other subreddits (Economics, stocks, news (USA), and technology) were scraped using an API bot.
+
+\item The offset is an interesting feature which got minimal experimentation in the baseline. Additional offsets were attempted to see if future news insight had an affect on the market.
+
+\item While the headline date was used to split the data, it was never introduced as a feature. It was determined that the date could be pertinent if there were fluctuations around certain seasons or holidays.
+\end{itemize}
+
+A problem with the reddit API is that several of the subreddits were young, or were not popular enough to have more than 25 posts per day. This resulted in the new data sets having slightly different distributions and sizes.\\
+
+
+\section{Results}
+\subsection{Discussion}
+
+\section{Conclusion}
+\subsection{Future Work}
+\subsection{Societal Implications}
+\subsection{Final Thoughts}
+
+\subsection{Contributions}
+
+
+\bibliography{acl2017}
+\bibliographystyle{acl_natbib}
+\textit{Daily News for Stock Market Prediction}. Kaggle.com. Retrieved 14 May 2017, from \url{https://www.kaggle.com/aaron7sun/stocknews}\\
+
+Bollen, Johan \& Mao, Huina \& Zeng, Xiao-Jun. (2010). \textit{Twitter Mood Predicts the Stock Market.} Journal of Computational Science. 2. . 10.1016/j.jocs.2010.12.007. Retrieved 22 July 2017, from \url{https://arxiv.org/pdf/1010.3003.pdf}\\
+
+
+\textit{DJI Historical Prices | Dow Jones Industrial Average Stock - Yahoo Finance}. (2017). Finance.yahoo.com. Retrieved 14 May 2017, from \url{https://finance.yahoo.com/quote/\%5EDJI/history?p=\%5EDJI}\\
+
+G\'el\'e, Andrew. (2016, November). \textit{OMG! NLP with the DJIA and Reddit! | Kaggle.} Retrieved 14 May 2017, from \url{https://www.kaggle.com/ndrewgele/omg-nlp-with-the-djia-and-reddit}\\
+
+Lee, H., Surdeanu, M., MacCartney, B., \& Jurafsky, D. (2014, May). \textit{On the Importance of Text Analysis for Stock Price Prediction.} In LREC (pp. 1170-1175). Retrieved 14 May 2017, from \url{http://www.lrec-conf.org/proceedings/lrec2014/pdf/1065_Paper.pdf}\\
+
+Nassirtoussi A.K., Aghabozorgi S., Wah T.Y., Ngo D.L.C. (2015). \textit{Text mining of news-headlines for FOREX market prediction: A Multi-layer Dimension Reduction Algorithm with semantics and sentiment.} Expert Systems with Applications, Volume 42, Issue 1, 2015, Pages 306-324, ISSN 0957-4174. Retrieved 22 July 2017, from \url{http://www.sciencedirect.com/science/article/pii/S0957417414004801}\\
+
+Schumaker, R. P., \& Chen, H. (2009). \textit{Textual analysis of stock market prediction using breaking financial news: The AZFin text system. ACM Transactions on Information Systems (TOIS), 27(2), 12.} Retrieved July 15 2017, from \url{http://dl.acm.org/citation.cfm?id=1462204}\\
+
+
+Sedlak, M. (2016). \textit{How Natural Language Processing is transforming the financial industry - IBM Watson}. IBM. Retrieved 14 May 2017, from \url{https://www.ibm.com/blogs/watson/2016/06/natural-language-processing-\\transforming-financial-industry-2/}\\
+
+Trastour, S., Genin, M., \& Morlot, A. (2016).\textit{Prediction of the crude oil price thanks to natural language processing applied to newspapers.} Retrieved 14 May 2017, from \url{http://cs229.stanford.edu/proj2016/report/GeninMorlot\\Trastour-PredictionOfTheCrudeOilPrice\\ThanksToNLPAppliedToNewspapers-report.pdf}\\
+
+
+\end{document}
