@@ -8,7 +8,7 @@ import numpy as np
 from sklearn import svm
 from sklearn.naive_bayes import MultinomialNB
 
-preprocess = PP.Preprocess(add_sentiment=False, stemming=False)
+preprocess = PP.Preprocess(add_sentiment=True, stemming=True)
 results = preprocess.get_results()
 data_train, data_test, y_train, y_test = results[0], results[1], results[2], results[3]
 

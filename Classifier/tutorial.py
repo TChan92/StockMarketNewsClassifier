@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 # Follow along here : https://www.kaggle.com/ndrewgele/omg-nlp-with-the-djia-and-reddit
 
 # Grab the data
-data = pd.read_csv('../data/Combined_News_DJIA.csv')
+data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
 
 # Split the data into test and training data
 train = data[data['Date'] < '2015-01-01']

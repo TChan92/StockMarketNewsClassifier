@@ -61,14 +61,14 @@ class Preprocess():
 	def preprocess(self, add_sentiment):
 		# Grab our data into pandas dataframe
 		stemmer = stem.PorterStemmer()
-		data = pd.read_csv('data/Combined_Economics_Saved.csv')
-		data['Date'] = data['Date'].map(lambda a: self.transform_date(a))
+		data = pd.read_csv('data/Combined_news_Saved.csv', error_bad_lines=False)
+		# data['Date'] = data['Date'].map(lambda a: self.transform_date(a))
 		data_pos = data[data['Label'] == 1]
 		data_neg = data[data['Label'] == 0]
 
-		num_of_days = +2
+		num_of_days = -1
 		# offset headlines by n days
-		num_headlines = 10
+		num_headlines = 15
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg, num_headlines)
 
 		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])

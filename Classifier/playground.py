@@ -7,7 +7,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Grab the data
-data = pd.read_csv('../data/Combined_News_DJIA.csv')
+data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
 data_pos = data[data['Label'] == 1]
 data_neg = data[data['Label'] == 0]
 

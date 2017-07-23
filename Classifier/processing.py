@@ -22,7 +22,7 @@ class Classifier():
 		print(classification_report(self._test_y, predictions))
 
 # Grab the data
-# data = pd.read_csv('../data/Combined_News_DJIA.csv')
+# data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
 # train = data[data['Date'] < '2015-01-01']
 # test = data[data['Date'] > '2014-12-31']
 

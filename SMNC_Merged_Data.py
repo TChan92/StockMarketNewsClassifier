@@ -40,9 +40,9 @@ AGGREGATED_TRAIN = []
 AGGREGATED_TEST = []
 
 # Grab the wn data
-data_wn = pd.read_csv('data/Combined_News_DJIA.csv')
-data_e = pd.read_csv('data/Combined_News_DJIA.csv')
-data_stocks = pd.read_csv('data/Combined_News_DJIA.csv')
+data_wn = pd.read_csv('data/Combined_WorldNews_DJIA.csv')
+data_e = pd.read_csv('data/Combined_WorldNews_DJIA.csv')
+data_stocks = pd.read_csv('data/Combined_WorldNews_DJIA.csv')
 
 
 valid_headlines_train = []
