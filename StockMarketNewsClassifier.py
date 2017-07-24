@@ -19,7 +19,7 @@ TEST = 'data/test.csv'
 DAY_OFFSET = 0
 DATA = WORLD_NEWS
 # tranform_dates is ONLY needed for the Economics dataset
-preprocess = PP.Preprocess(DATA, DAY_OFFSET, add_sentiment=False, stemming=False, add_date=False, transform_dates=False, add_relations=False)
+preprocess = PP.Preprocess(DATA, DAY_OFFSET, add_sentiment=True, stemming=True, add_date=True, transform_dates=False, add_relations=True)
 results = preprocess.get_results()
 data_train, data_test, y_train, y_test = results[0], results[1], results[2], results[3]
 
