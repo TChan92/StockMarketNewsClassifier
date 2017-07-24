@@ -44,16 +44,15 @@ def remove_quotes(s):
 
 
 class Preprocess():
-	def __init__(self, data, offset, add_sentiment=True, stemming=True, add_date=False, transform_dates=False,
-				 add_relations=False):
+	def __init__(self, config):
 		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
-		self.stemming = stemming
-		self.offset = offset
-		self.transform_dates = transform_dates
-		self.add_date = add_date
-		self.data = data
-		self.add_sentiment = add_sentiment
-		self.add_relation = add_relations
+		self.stemming = config['STEMMING']
+		self.offset = config['DAY_OFFSET']
+		self.transform_dates = config['TRANSFORM_DATES']
+		self.add_date = config['ADD_DATE']
+		self.data = config['DATA']
+		self.add_sentiment = config['ADD_SENTIMENT']
+		self.add_relation = config['ADD_RELATION']
 		self.extra_columns = 0
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess()
 
