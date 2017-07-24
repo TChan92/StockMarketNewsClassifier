@@ -55,7 +55,14 @@
 
 
 \section{Introduction}
-Description of the problem and why it is important / interesting
+The goal of this project was to use news headline data sets to try and predict the rise and fall of the United States industrial stock market.\\
+
+
+To achieve this, labeled news headlines and supervised learning techniques will be used to create an accurate stock market classifier. This project is interesting for several reasons. Most of the data set pertains to international headlines. If a classifier can be created from it than it will illustrate how news around the world affects the US. It will also reveal if popular aggregate news can identify trends in the stock market.\\
+  
+
+Stock market prediction is a difficult challenge due to the many outside factors which affect it. Natural disasters, scandals, and product hype can all contribute to people buying or selling stock. Many of these factors can be captured by news aggregation. If the classifier built is sufficiently accurate than it could be extended to make predictions off of additional new aggregation sources.\\
+
 
 \subsection{Data Description}
 The data set for our chosen problem comes from Kaggle: a website which hosts various data mining and machine learning competitions. It was posted in August 2016 by user Aaron7sun ("Daily News for Stock Market Prediction", 2016). Reddit.com is a news aggregation website where users can vote on news headlines. The news headlines in the data set are from the “world news” section. Reddit.com has a large amount of US visitors, resulting in many US specific headlines reaching the top 25 posts daily, despite the focus of the World News section being international headlines.\\
@@ -72,15 +79,13 @@ In terms of data distribution the dataset is slightly biased towards the DJIA ri
 \subsection{Related Work}
 There are many ways that Natural Language Processing could assist in the movement of the  stock market. For example, using the AlchemyData News API provided by IBM could allow machines to gather real-time intelligence on specific stocks, understand and respond to news events, monitor company sentiment and etc. (Sedlak, 2016).\\
 
-There are also researchers that used NLP and conducted a Textual Analysis for stock price prediction. The study lead by Stanford University introduced a system that forecasts company's’ stock price changes and classifies them into UP, DOWN and STAY. By building a well defined corpus that aligns the descriptions of financial events, the system’s Unigram model could predict the stock trend with an accuracy of 54.4\%. The low accuracy is because that  newspaper articles reflect not only new information about the company, but also the perspective and options of third parties, which may require more time for the market to digest (Lee et al, 2014).\\
+There are also researchers that used NLP and conducted a Textual Analysis for stock price prediction. The study lead by Stanford University introduced a system that forecasts company's’ stock price changes and classifies them into UP, DOWN and STAY. By building a well defined corpus that aligns the descriptions of financial events, the system's Unigram model could predict the stock trend with an accuracy of 54.4\%. The low accuracy is because that  newspaper articles reflect not only new information about the company, but also the perspective and options of third parties, which may require more time for the market to digest (Lee et al, 2014).\\
 
 Two researchers one from Iona College and the other from University of Arizona worked together and performed textual analysis of the predicting the stock market using recent financial news. The researchers approached the problem using prediction with machine learning using financial news articles analysis where they researched with different textual representations, such as bag of words, noun phrases, and named entities (Schumaker, R. P., \& Chen, H. 2009).\\
 
 The researchers investigated 9,211 financial news articles and over a five week period of 10,259,042 stock quotes that covered 500 of S\&P stocks. They started their analyses of a stock price twenty minutes after a news article was released. A support vector machine (SVM) was used for discrete numeric prediction and models containing different stock-specific variables. They showed that the model that had both article terms and stock price at the time of the of the articles release was the closest prediction to the actual stock price. They achieved a prediction of the price moving in the same direction as the future price with a 57.1\% accuracy and their highest return was 2.06\% which used a simulated trading engine. They also investigated different textual representations and found that Proper noun scheme performs better the bag of words (Schumaker, R. P., \& Chen, H. 2009).\\
 
 One report used sentiment analysis on Twitter posts to try and predict the daily closing values of the Dow Jones. The focus was on finding out whether the mood of the society was correlated to the stock price of the Dow Jones. Two different sentiment analysis tools were used: OpinionFinder and Google Profile of Mood States. OpinionFinder analyzed only a positive and negative moods, while Google Profile of Mood States would measure mood in term of 6 different dimensions. Correlation between mood and stock price was determined using Granger causality analysis. A Self-Organizing Fuzzy Neural Network was used to do the actual classification, which achieved an accuracy of 86.7\%. Different moods were found to give different classification accuracies (Bollen et. al., 2010).\\
-
-Predicting the movement of a stock markets is a hard task, especially when we are using text mining techniques on news headlines. The reason why this task is difficult is because news headlines usually don’t correspond to one specific market.\\
 
 Researchers from the Malaysia has performed a study on text mining of news-headlines targeting specifically to the Foreign exchange (FOREX) market prediction. The study resulted the development of a multi-layer dimension reduction algorithm that consisted of three main layers: Semantic Abstraction Layer, Sentiment Integration Layer and Synchronous Targeted Feature Reduction. The proposed algorithm resulted with a model that has accuracy of up to 83.33\% (Nassirtoussi et. al. 2015).\\
 
@@ -131,6 +136,7 @@ A problem with the reddit API is that several of the subreddits were young, or w
 \subsection{Contributions}
 
 
+\section{References}
 \bibliography{acl2017}
 \bibliographystyle{acl_natbib}
 \textit{Daily News for Stock Market Prediction}. Kaggle.com. Retrieved 14 May 2017, from \url{https://www.kaggle.com/aaron7sun/stocknews}\\

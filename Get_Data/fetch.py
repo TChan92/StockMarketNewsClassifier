@@ -35,7 +35,7 @@ def subreddit_search(subreddit, search_string, num_headlines):
 '''
 CALLING CODE
 '''
-SUBREDDIT = "news"
+SUBREDDIT = "technology"
 NUM_HEADLINES = 15
 
 subreddit = get_reddit().subreddit(SUBREDDIT)
