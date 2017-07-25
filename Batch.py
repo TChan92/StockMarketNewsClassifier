@@ -16,13 +16,60 @@ TECH = 'data/Combined_technology_Saved.csv'
 TEST = 'data/test.csv'
 NY = 'data/Combined_NYT_Saved.csv'
 
+DATA = NY
 '''Calling Code'''
-config = {
-	"DATA": NY,
+config1 = {
+	"DATA": DATA,
+	"DAY_OFFSET": 0,
+	"ADD_SENTIMENT": False,
+	"STEMMING": False,
+	"ADD_DATE": False,
+	"TRANSFORM_DATES": False, #Only needed for ECON
+	"ADD_RELATION": False
+}
+config2 = {
+	"DATA": DATA,
+	"DAY_OFFSET": 0,
+	"ADD_SENTIMENT": False,
+	"STEMMING": True,
+	"ADD_DATE": False,
+	"TRANSFORM_DATES": False, #Only needed for ECON
+	"ADD_RELATION": False
+}
+config3 = {
+	"DATA": DATA,
+	"DAY_OFFSET": 0,
+	"ADD_SENTIMENT": True,
+	"STEMMING": False,
+	"ADD_DATE": False,
+	"TRANSFORM_DATES": False, #Only needed for ECON
+	"ADD_RELATION": False
+}
+config4 = {
+	"DATA": DATA,
+	"DAY_OFFSET": 0,
+	"ADD_SENTIMENT": True,
+	"STEMMING": True,
+	"ADD_DATE": False,
+	"TRANSFORM_DATES": False, #Only needed for ECON
+	"ADD_RELATION": False
+}
+config5 = {
+	"DATA": DATA,
 	"DAY_OFFSET": 0,
 	"ADD_SENTIMENT": False,
 	"STEMMING": False,
 	"ADD_DATE": True,
+	"TRANSFORM_DATES": False, #Only needed for ECON
+	"ADD_RELATION": False
+}
+config7 = {
+	"DATA": DATA,
+	"DAY_OFFSET": 0,
+	"ADD_SENTIMENT": False,
+	"STEMMING": False,
+	"ADD_DATE": True,
+	"TRANSFORM_DATES": False, #Only needed for ECON
 	"ADD_RELATION": False
 }
 preprocess = PP.Preprocess(config)
