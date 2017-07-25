@@ -14,11 +14,12 @@ STOCKS = 'data/Combined_stocks_Saved.csv'
 US_NEWS = 'data/Combined_news_Saved.csv'
 TECH = 'data/Combined_technology_Saved.csv'
 TEST = 'data/test.csv'
+NY = 'data/Combined_NYT_Saved.csv'
 
 '''Calling Code'''
 config = {
 	"DATA": WORLD_NEWS,
-	"DAY_OFFSET": 0,
+	"DAY_OFFSET": 2,
 	"ADD_SENTIMENT": True,
 	"STEMMING": True,
 	"ADD_DATE": True,

@@ -104,12 +104,16 @@ class Preprocess():
 		return data_list
 
 	def vectorize_date(self, train, test):
-		words_train = [row[0] for row in train]
-		words_test = [row[0] for row in test]
-		extra_train = csr_matrix([row[-(self.extra_columns):] for row in train])
-		extra_test = csr_matrix([row[-(self.extra_columns):] for row in test])
-		data_train = hstack((self.vectorizer.fit_transform(words_train), extra_train))
-		data_test = hstack((self.vectorizer.transform(words_test), extra_test))
+		if self.extra_columns > 0:
+			words_train = [row[0] for row in train]
+			words_test = [row[0] for row in test]
+			extra_train = csr_matrix([row[-(self.extra_columns):] for row in train])
+			extra_test = csr_matrix([row[-(self.extra_columns):] for row in test])
+			data_train = hstack((self.vectorizer.fit_transform(words_train), extra_train))
+			data_test = hstack((self.vectorizer.transform(words_test), extra_test))
+		else:
+			data_train = self.vectorizer.fit_transform(train)
+			data_test = self.vectorizer.transform(test)
 		return data_train, data_test
 
 	def add_relation_metric(self, data):
