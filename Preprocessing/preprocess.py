@@ -48,6 +48,7 @@ class Preprocess():
 		self.vectorizer = CountVectorizer(lowercase=True, stop_words=None, ngram_range=(2, 3))
 		self.stemming = config['STEMMING']
 		self.offset = config['DAY_OFFSET']
+		self.transform_dates = config['TRANSFORM_DATES']
 		self.add_date = config['ADD_DATE']
 		self.data = config['DATA']
 		self.add_sentiment = config['ADD_SENTIMENT']
@@ -142,6 +143,9 @@ class Preprocess():
 		# Grab our data into pandas dataframe
 		data = pd.read_csv(self.data, error_bad_lines=False)
 		num_headlines = data.shape[1] - 2
+
+		if self.transform_dates:
+			data['Date'] = data['Date'].map(lambda a: self.transform_date(a))
 		if self.add_date:
 			self.extra_columns += 3
 		if self.add_relation:

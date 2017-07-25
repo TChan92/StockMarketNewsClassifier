@@ -21,8 +21,9 @@ config = {
 	"DATA": NY,
 	"DAY_OFFSET": 0,
 	"ADD_SENTIMENT": False,
-	"STEMMING": False,
+	"STEMMING": True,
 	"ADD_DATE": True,
+	"TRANSFORM_DATES": False, #Only needed for ECON
 	"ADD_RELATION": False
 }
 preprocess = PP.Preprocess(config)
