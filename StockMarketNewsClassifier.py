@@ -18,13 +18,13 @@ NY = 'data/Combined_NYT_Saved.csv'
 
 '''Calling Code'''
 config = {
-	"DATA": WORLD_NEWS,
-	"DAY_OFFSET": 2,
-	"ADD_SENTIMENT": True,
+	"DATA": NY,
+	"DAY_OFFSET": 0,
+	"ADD_SENTIMENT": False,
 	"STEMMING": True,
 	"ADD_DATE": True,
 	"TRANSFORM_DATES": False, #Only needed for ECON
-	"ADD_RELATION": True
+	"ADD_RELATION": False
 }
 preprocess = PP.Preprocess(config)
 results = preprocess.get_results()

@@ -35,8 +35,8 @@ def subreddit_search(subreddit, search_string, num_headlines):
 '''
 CALLING CODE
 '''
-SUBREDDIT = "technology"
-NUM_HEADLINES = 15
+SUBREDDIT = "Economics"
+NUM_HEADLINES = 10
 
 subreddit = get_reddit().subreddit(SUBREDDIT)
 data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')

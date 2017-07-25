@@ -57,7 +57,7 @@ class Preprocess():
 		self.data_train, self.data_test, self.y_train, self.y_test = self.preprocess()
 
 	def get_sentiment(self, s):
-		if (self.add_date):
+		if (self.add_date or self.add_relation):
 			return sid.polarity_scores(s[0])
 		else:
 			return sid.polarity_scores(s)
@@ -75,6 +75,7 @@ class Preprocess():
 
 	def transform_date(self, date):
 		date = date.split("/")
+		print date
 		return date[2] + "-" + date[0] + "-" + date[1]
 
 	def extract_data_from_frame(self, data, num_headlines):
@@ -100,7 +101,10 @@ class Preprocess():
 			for row in data['Relation']:
 				relation_list.append(row)
 			for row in range(0, len(data_list)):
-				data_list[row].append(relation_list[row])
+				if (type(data_list[row]) is str):
+					data_list[row] = [data_list[row], relation_list[row]]
+				else:
+					data_list[row].append(relation_list[row])
 		return data_list
 
 	def vectorize_date(self, train, test):
