@@ -23,7 +23,6 @@ config = {
 	"ADD_SENTIMENT": False,
 	"STEMMING": True,
 	"ADD_DATE": True,
-	"TRANSFORM_DATES": False, #Only needed for ECON
 	"ADD_RELATION": False
 }
 preprocess = PP.Preprocess(config)
