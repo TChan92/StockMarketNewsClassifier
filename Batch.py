@@ -85,6 +85,7 @@ for D in DATA_SETS:
 		}
 		CONFIGS = [config1, config2, config3, config4, config5, config6, config7]
 		for C in CONFIGS:
+			print_config(C)
 			preprocess = PP.Preprocess(C)
 			results = preprocess.get_results()
 			data_train, data_test, y_train, y_test = results[0], results[1], results[2], results[3]
