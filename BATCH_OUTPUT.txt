@@ -1,3 +1,5 @@
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 51 135]
  [ 29 163]]
 Accuracy 0.566137566138
@@ -28,6 +30,8 @@ Accuracy 0.563492063492
 
 avg / total       0.56      0.56      0.56       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 49 137]
  [ 27 165]]
 Accuracy 0.566137566138
@@ -58,6 +62,8 @@ Accuracy 0.55291005291
 
 avg / total       0.55      0.55      0.54       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 51 135]
  [ 29 163]]
 Accuracy 0.566137566138
@@ -88,6 +94,8 @@ Accuracy 0.560846560847
 
 avg / total       0.56      0.56      0.55       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 49 137]
  [ 27 165]]
 Accuracy 0.566137566138
@@ -118,6 +126,8 @@ Accuracy 0.558201058201
 
 avg / total       0.56      0.56      0.55       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 41 145]
  [ 21 171]]
 Accuracy 0.560846560847
@@ -148,6 +158,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 50 136]
  [ 28 164]]
 Accuracy 0.566137566138
@@ -178,6 +190,8 @@ Accuracy 0.555555555556
 
 avg / total       0.56      0.56      0.54       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 44 142]
  [ 23 169]]
 Accuracy 0.563492063492
@@ -208,6 +222,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 54 132]
  [ 26 166]]
 Accuracy 0.582010582011
@@ -238,6 +254,8 @@ Accuracy 0.534391534392
 
 avg / total       0.54      0.53      0.52       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 48 138]
  [ 27 165]]
 Accuracy 0.563492063492
@@ -268,6 +286,8 @@ Accuracy 0.574074074074
 
 avg / total       0.58      0.57      0.56       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 54 132]
  [ 26 166]]
 Accuracy 0.582010582011
@@ -298,6 +318,8 @@ Accuracy 0.571428571429
 
 avg / total       0.58      0.57      0.56       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 48 138]
  [ 27 165]]
 Accuracy 0.563492063492
@@ -328,6 +350,8 @@ Accuracy 0.574074074074
 
 avg / total       0.58      0.57      0.56       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 43 143]
  [ 21 171]]
 Accuracy 0.566137566138
@@ -358,6 +382,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 54 132]
  [ 27 165]]
 Accuracy 0.579365079365
@@ -388,6 +414,8 @@ Accuracy 0.550264550265
 
 avg / total       0.56      0.55      0.53       378
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 45 141]
  [ 23 169]]
 Accuracy 0.566137566138
@@ -418,6 +446,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 50 136]
  [ 24 168]]
 Accuracy 0.57671957672
@@ -448,6 +478,8 @@ Accuracy 0.547619047619
 
 avg / total       0.55      0.55      0.53       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 48 138]
  [ 26 166]]
 Accuracy 0.566137566138
@@ -478,6 +510,8 @@ Accuracy 0.558201058201
 
 avg / total       0.57      0.56      0.54       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 50 136]
  [ 24 168]]
 Accuracy 0.57671957672
@@ -508,6 +542,8 @@ Accuracy 0.52380952381
 
 avg / total       0.52      0.52      0.50       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 48 138]
  [ 26 166]]
 Accuracy 0.566137566138
@@ -538,6 +574,8 @@ Accuracy 0.579365079365
 
 avg / total       0.59      0.58      0.57       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 45 141]
  [ 24 168]]
 Accuracy 0.563492063492
@@ -568,6 +606,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 50 136]
  [ 24 168]]
 Accuracy 0.57671957672
@@ -598,6 +638,8 @@ Accuracy 0.550264550265
 
 avg / total       0.55      0.55      0.54       378
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 44 142]
  [ 25 167]]
 Accuracy 0.558201058201
@@ -628,6 +670,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 52 134]
  [ 25 167]]
 Accuracy 0.579365079365
@@ -658,6 +702,8 @@ Accuracy 0.547619047619
 
 avg / total       0.55      0.55      0.53       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 47 139]
  [ 25 167]]
 Accuracy 0.566137566138
@@ -688,6 +734,8 @@ Accuracy 0.550264550265
 
 avg / total       0.55      0.55      0.54       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 52 134]
  [ 25 167]]
 Accuracy 0.579365079365
@@ -718,6 +766,8 @@ Accuracy 0.544973544974
 
 avg / total       0.55      0.54      0.52       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 47 139]
  [ 25 167]]
 Accuracy 0.566137566138
@@ -748,6 +798,8 @@ Accuracy 0.55291005291
 
 avg / total       0.56      0.55      0.53       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 44 142]
  [ 23 169]]
 Accuracy 0.563492063492
@@ -778,6 +830,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 53 133]
  [ 25 167]]
 Accuracy 0.582010582011
@@ -808,6 +862,8 @@ Accuracy 0.55291005291
 
 avg / total       0.56      0.55      0.53       378
 
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 43 143]
  [ 24 168]]
 Accuracy 0.558201058201
@@ -838,6 +894,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 52 134]
  [ 30 162]]
 Accuracy 0.566137566138
@@ -868,6 +926,8 @@ Accuracy 0.547619047619
 
 avg / total       0.55      0.55      0.53       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 49 137]
  [ 25 167]]
 Accuracy 0.571428571429
@@ -898,6 +958,8 @@ Accuracy 0.579365079365
 
 avg / total       0.59      0.58      0.57       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 52 134]
  [ 30 162]]
 Accuracy 0.566137566138
@@ -928,6 +990,8 @@ Accuracy 0.544973544974
 
 avg / total       0.55      0.54      0.52       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 49 137]
  [ 25 167]]
 Accuracy 0.571428571429
@@ -958,6 +1022,8 @@ Accuracy 0.574074074074
 
 avg / total       0.58      0.57      0.56       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 38 148]
  [ 22 170]]
 Accuracy 0.550264550265
@@ -988,6 +1054,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 51 135]
  [ 30 162]]
 Accuracy 0.563492063492
@@ -1018,6 +1086,8 @@ Accuracy 0.542328042328
 
 avg / total       0.54      0.54      0.54       378
 
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_WorldNews_DJIA.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 38 148]
  [ 21 171]]
 Accuracy 0.55291005291
@@ -1048,6 +1118,8 @@ Accuracy 0.492063492063
 
 avg / total       0.24      0.49      0.32       378
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 42 143]
  [ 41 148]]
 Accuracy 0.508021390374
@@ -1078,6 +1150,8 @@ Accuracy 0.478609625668
 
 avg / total       0.48      0.48      0.48       374
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 48 137]
  [ 42 147]]
 Accuracy 0.521390374332
@@ -1108,6 +1182,8 @@ Accuracy 0.48128342246
 
 avg / total       0.48      0.48      0.47       374
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 42 143]
  [ 41 148]]
 Accuracy 0.508021390374
@@ -1138,6 +1214,8 @@ Accuracy 0.470588235294
 
 avg / total       0.47      0.47      0.47       374
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 48 137]
  [ 42 147]]
 Accuracy 0.521390374332
@@ -1168,6 +1246,8 @@ Accuracy 0.494652406417
 
 avg / total       0.49      0.49      0.49       374
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 35 150]
  [ 33 156]]
 Accuracy 0.510695187166
@@ -1198,6 +1278,8 @@ Accuracy 0.494652406417
 
 avg / total       0.24      0.49      0.33       374
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 42 143]
  [ 41 148]]
 Accuracy 0.508021390374
@@ -1228,6 +1310,8 @@ Accuracy 0.46256684492
 
 avg / total       0.46      0.46      0.46       374
 
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 37 148]
  [ 31 158]]
 Accuracy 0.521390374332
@@ -1258,6 +1342,8 @@ Accuracy 0.494652406417
 
 avg / total       0.24      0.49      0.33       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 44 141]
  [ 40 149]]
 Accuracy 0.516042780749
@@ -1288,6 +1374,8 @@ Accuracy 0.502673796791
 
 avg / total       0.50      0.50      0.49       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 44 141]
  [ 38 151]]
 Accuracy 0.521390374332
@@ -1318,6 +1406,8 @@ Accuracy 0.483957219251
 
 avg / total       0.48      0.48      0.48       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 44 141]
  [ 40 149]]
 Accuracy 0.516042780749
@@ -1348,6 +1438,8 @@ Accuracy 0.491978609626
 
 avg / total       0.49      0.49      0.49       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 44 141]
  [ 38 151]]
 Accuracy 0.521390374332
@@ -1378,6 +1470,8 @@ Accuracy 0.473262032086
 
 avg / total       0.47      0.47      0.47       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 27 158]
  [ 29 160]]
 Accuracy 0.5
@@ -1408,6 +1502,8 @@ Accuracy 0.494652406417
 
 avg / total       0.24      0.49      0.33       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
 [[ 44 141]
  [ 40 149]]
 Accuracy 0.516042780749
@@ -1438,6 +1534,8 @@ Accuracy 0.483957219251
 
 avg / total       0.48      0.48      0.47       374
 
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
 [[ 28 157]
  [ 27 162]]
 Accuracy 0.508021390374
@@ -1468,6 +1566,8 @@ Accuracy 0.494652406417
 
 avg / total       0.24      0.49      0.33       374
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 39 146]
  [ 39 150]]
 Accuracy 0.505347593583
@@ -1498,6 +1598,8 @@ Accuracy 0.473262032086
 
 avg / total       0.47      0.47      0.47       374
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
 [[ 40 145]
  [ 37 152]]
 Accuracy 0.513368983957
@@ -1528,6 +1630,8 @@ Accuracy 0.489304812834
 
 avg / total       0.49      0.49      0.48       374
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 39 146]
  [ 39 150]]
 Accuracy 0.505347593583
@@ -1558,9 +1662,5060 @@ Accuracy 0.473262032086
 
 avg / total       0.47      0.47      0.47       374
 
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
 [[ 40 145]
  [ 37 152]]
 Accuracy 0.513368983957
              precision    recall  f1-score   support
 
-        0.0       0
+        0.0       0.52      0.22      0.31       185
+        1.0       0.51      0.80      0.63       189
+
+avg / total       0.52      0.51      0.47       374
+
+[[ 39 146]
+ [ 37 152]]
+Accuracy 0.510695187166
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.21      0.30       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.51      0.51      0.46       374
+
+[[ 66 119]
+ [ 70 119]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.36      0.41       185
+        1.0       0.50      0.63      0.56       189
+
+avg / total       0.49      0.49      0.49       374
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 31 154]
+ [ 26 163]]
+Accuracy 0.51871657754
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.17      0.26       185
+        1.0       0.51      0.86      0.64       189
+
+avg / total       0.53      0.52      0.45       374
+
+[[ 32 153]
+ [ 29 160]]
+Accuracy 0.513368983957
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.17      0.26       185
+        1.0       0.51      0.85      0.64       189
+
+avg / total       0.52      0.51      0.45       374
+
+[[185   0]
+ [189   0]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       189
+
+avg / total       0.24      0.49      0.33       374
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 39 146]
+ [ 38 151]]
+Accuracy 0.508021390374
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.21      0.30       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.51      0.51      0.46       374
+
+[[ 35 150]
+ [ 36 153]]
+Accuracy 0.502673796791
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.27       185
+        1.0       0.50      0.81      0.62       189
+
+avg / total       0.50      0.50      0.45       374
+
+[[ 86  99]
+ [ 87 102]]
+Accuracy 0.502673796791
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.46      0.48       185
+        1.0       0.51      0.54      0.52       189
+
+avg / total       0.50      0.50      0.50       374
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 31 154]
+ [ 22 167]]
+Accuracy 0.529411764706
+             precision    recall  f1-score   support
+
+        0.0       0.58      0.17      0.26       185
+        1.0       0.52      0.88      0.65       189
+
+avg / total       0.55      0.53      0.46       374
+
+[[ 35 150]
+ [ 28 161]]
+Accuracy 0.524064171123
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.19      0.28       185
+        1.0       0.52      0.85      0.64       189
+
+avg / total       0.54      0.52      0.47       374
+
+[[185   0]
+ [189   0]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       189
+
+avg / total       0.24      0.49      0.33       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 37 148]
+ [ 37 152]]
+Accuracy 0.505347593583
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.20      0.29       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.50      0.51      0.46       374
+
+[[ 35 150]
+ [ 38 151]]
+Accuracy 0.497326203209
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.19      0.27       185
+        1.0       0.50      0.80      0.62       189
+
+avg / total       0.49      0.50      0.45       374
+
+[[ 68 117]
+ [ 92  97]]
+Accuracy 0.441176470588
+             precision    recall  f1-score   support
+
+        0.0       0.42      0.37      0.39       185
+        1.0       0.45      0.51      0.48       189
+
+avg / total       0.44      0.44      0.44       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 36 149]
+ [ 40 149]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.19      0.28       185
+        1.0       0.50      0.79      0.61       189
+
+avg / total       0.49      0.49      0.45       374
+
+[[ 34 151]
+ [ 39 150]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.18      0.26       185
+        1.0       0.50      0.79      0.61       189
+
+avg / total       0.48      0.49      0.44       374
+
+[[ 55 130]
+ [ 79 110]]
+Accuracy 0.441176470588
+             precision    recall  f1-score   support
+
+        0.0       0.41      0.30      0.34       185
+        1.0       0.46      0.58      0.51       189
+
+avg / total       0.43      0.44      0.43       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 37 148]
+ [ 37 152]]
+Accuracy 0.505347593583
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.20      0.29       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.50      0.51      0.46       374
+
+[[ 36 149]
+ [ 38 151]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.28       185
+        1.0       0.50      0.80      0.62       189
+
+avg / total       0.49      0.50      0.45       374
+
+[[ 67 118]
+ [ 71 118]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.36      0.41       185
+        1.0       0.50      0.62      0.56       189
+
+avg / total       0.49      0.49      0.49       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 36 149]
+ [ 41 148]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.19      0.27       185
+        1.0       0.50      0.78      0.61       189
+
+avg / total       0.48      0.49      0.44       374
+
+[[ 34 151]
+ [ 39 150]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.18      0.26       185
+        1.0       0.50      0.79      0.61       189
+
+avg / total       0.48      0.49      0.44       374
+
+[[ 62 123]
+ [ 80 109]]
+Accuracy 0.457219251337
+             precision    recall  f1-score   support
+
+        0.0       0.44      0.34      0.38       185
+        1.0       0.47      0.58      0.52       189
+
+avg / total       0.45      0.46      0.45       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 31 154]
+ [ 30 159]]
+Accuracy 0.508021390374
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.17      0.25       185
+        1.0       0.51      0.84      0.63       189
+
+avg / total       0.51      0.51      0.44       374
+
+[[ 32 153]
+ [ 32 157]]
+Accuracy 0.505347593583
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.17      0.26       185
+        1.0       0.51      0.83      0.63       189
+
+avg / total       0.50      0.51      0.45       374
+
+[[185   0]
+ [189   0]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       189
+
+avg / total       0.24      0.49      0.33       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 36 149]
+ [ 37 152]]
+Accuracy 0.502673796791
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.28       185
+        1.0       0.50      0.80      0.62       189
+
+avg / total       0.50      0.50      0.45       374
+
+[[ 37 148]
+ [ 37 152]]
+Accuracy 0.505347593583
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.20      0.29       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.50      0.51      0.46       374
+
+[[ 85 100]
+ [ 89 100]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.46      0.47       185
+        1.0       0.50      0.53      0.51       189
+
+avg / total       0.49      0.49      0.49       374
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 32 153]
+ [ 29 160]]
+Accuracy 0.513368983957
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.17      0.26       185
+        1.0       0.51      0.85      0.64       189
+
+avg / total       0.52      0.51      0.45       374
+
+[[ 36 149]
+ [ 34 155]]
+Accuracy 0.510695187166
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.19      0.28       185
+        1.0       0.51      0.82      0.63       189
+
+avg / total       0.51      0.51      0.46       374
+
+[[185   0]
+ [189   0]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       189
+
+avg / total       0.24      0.49      0.33       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 46 143]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.23      0.31       185
+        1.0       0.50      0.76      0.60       189
+
+avg / total       0.49      0.49      0.46       374
+
+[[ 40 145]
+ [ 45 144]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.22      0.30       185
+        1.0       0.50      0.76      0.60       189
+
+avg / total       0.48      0.49      0.45       374
+
+[[ 66 119]
+ [ 81 108]]
+Accuracy 0.465240641711
+             precision    recall  f1-score   support
+
+        0.0       0.45      0.36      0.40       185
+        1.0       0.48      0.57      0.52       189
+
+avg / total       0.46      0.47      0.46       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 41 144]
+ [ 44 145]]
+Accuracy 0.497326203209
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       185
+        1.0       0.50      0.77      0.61       189
+
+avg / total       0.49      0.50      0.46       374
+
+[[ 40 145]
+ [ 44 145]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       185
+        1.0       0.50      0.77      0.61       189
+
+avg / total       0.49      0.49      0.45       374
+
+[[ 58 127]
+ [ 78 111]]
+Accuracy 0.451871657754
+             precision    recall  f1-score   support
+
+        0.0       0.43      0.31      0.36       185
+        1.0       0.47      0.59      0.52       189
+
+avg / total       0.45      0.45      0.44       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 41 144]
+ [ 45 144]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       185
+        1.0       0.50      0.76      0.60       189
+
+avg / total       0.49      0.49      0.45       374
+
+[[ 40 145]
+ [ 45 144]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.22      0.30       185
+        1.0       0.50      0.76      0.60       189
+
+avg / total       0.48      0.49      0.45       374
+
+[[ 65 120]
+ [ 75 114]]
+Accuracy 0.478609625668
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.35      0.40       185
+        1.0       0.49      0.60      0.54       189
+
+avg / total       0.48      0.48      0.47       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 44 145]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       185
+        1.0       0.50      0.77      0.61       189
+
+avg / total       0.50      0.50      0.46       374
+
+[[ 40 145]
+ [ 42 147]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       185
+        1.0       0.50      0.78      0.61       189
+
+avg / total       0.50      0.50      0.46       374
+
+[[ 54 131]
+ [ 60 129]]
+Accuracy 0.489304812834
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.29      0.36       185
+        1.0       0.50      0.68      0.57       189
+
+avg / total       0.49      0.49      0.47       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 36 149]
+ [ 38 151]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.28       185
+        1.0       0.50      0.80      0.62       189
+
+avg / total       0.49      0.50      0.45       374
+
+[[ 39 146]
+ [ 41 148]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.21      0.29       185
+        1.0       0.50      0.78      0.61       189
+
+avg / total       0.50      0.50      0.46       374
+
+[[185   0]
+ [189   0]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       189
+
+avg / total       0.24      0.49      0.33       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 40 145]
+ [ 45 144]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.22      0.30       185
+        1.0       0.50      0.76      0.60       189
+
+avg / total       0.48      0.49      0.45       374
+
+[[ 40 145]
+ [ 45 144]]
+Accuracy 0.491978609626
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.22      0.30       185
+        1.0       0.50      0.76      0.60       189
+
+avg / total       0.48      0.49      0.45       374
+
+[[ 69 116]
+ [ 73 116]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.37      0.42       185
+        1.0       0.50      0.61      0.55       189
+
+avg / total       0.49      0.49      0.49       374
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_Economics_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 41 144]
+ [ 38 151]]
+Accuracy 0.513368983957
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.22      0.31       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.52      0.51      0.47       374
+
+[[ 40 145]
+ [ 38 151]]
+Accuracy 0.510695187166
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.30       185
+        1.0       0.51      0.80      0.62       189
+
+avg / total       0.51      0.51      0.47       374
+
+[[185   0]
+ [189   0]]
+Accuracy 0.494652406417
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       189
+
+avg / total       0.24      0.49      0.33       374
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 29 150]
+ [ 29 155]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.16      0.24       179
+        1.0       0.51      0.84      0.63       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 23 156]
+ [ 26 158]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.13      0.20       179
+        1.0       0.50      0.86      0.63       184
+
+avg / total       0.49      0.50      0.42       363
+
+[[ 38 141]
+ [ 25 159]]
+Accuracy 0.542699724518
+             precision    recall  f1-score   support
+
+        0.0       0.60      0.21      0.31       179
+        1.0       0.53      0.86      0.66       184
+
+avg / total       0.57      0.54      0.49       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 29 150]
+ [ 28 156]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.16      0.25       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.51      0.51      0.44       363
+
+[[ 23 156]
+ [ 26 158]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.13      0.20       179
+        1.0       0.50      0.86      0.63       184
+
+avg / total       0.49      0.50      0.42       363
+
+[[ 14 165]
+ [ 11 173]]
+Accuracy 0.515151515152
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.08      0.14       179
+        1.0       0.51      0.94      0.66       184
+
+avg / total       0.54      0.52      0.40       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 29 150]
+ [ 29 155]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.16      0.24       179
+        1.0       0.51      0.84      0.63       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 23 156]
+ [ 26 158]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.13      0.20       179
+        1.0       0.50      0.86      0.63       184
+
+avg / total       0.49      0.50      0.42       363
+
+[[ 38 141]
+ [ 28 156]]
+Accuracy 0.534435261708
+             precision    recall  f1-score   support
+
+        0.0       0.58      0.21      0.31       179
+        1.0       0.53      0.85      0.65       184
+
+avg / total       0.55      0.53      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 29 150]
+ [ 27 157]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.16      0.25       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.51      0.51      0.45       363
+
+[[ 23 156]
+ [ 24 160]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.13      0.20       179
+        1.0       0.51      0.87      0.64       184
+
+avg / total       0.50      0.50      0.42       363
+
+[[ 39 140]
+ [ 31 153]]
+Accuracy 0.528925619835
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.22      0.31       179
+        1.0       0.52      0.83      0.64       184
+
+avg / total       0.54      0.53      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 33 146]
+ [ 37 147]]
+Accuracy 0.495867768595
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.18      0.27       179
+        1.0       0.50      0.80      0.62       184
+
+avg / total       0.49      0.50      0.44       363
+
+[[ 69 110]
+ [ 67 117]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.39      0.44       179
+        1.0       0.52      0.64      0.57       184
+
+avg / total       0.51      0.51      0.50       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 28 151]
+ [ 28 156]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.16      0.24       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 23 156]
+ [ 26 158]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.13      0.20       179
+        1.0       0.50      0.86      0.63       184
+
+avg / total       0.49      0.50      0.42       363
+
+[[ 14 165]
+ [ 12 172]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.08      0.14       179
+        1.0       0.51      0.93      0.66       184
+
+avg / total       0.52      0.51      0.40       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 30 149]
+ [ 35 149]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.17      0.25       179
+        1.0       0.50      0.81      0.62       184
+
+avg / total       0.48      0.49      0.43       363
+
+[[ 77 102]
+ [ 70 114]]
+Accuracy 0.526170798898
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.43      0.47       179
+        1.0       0.53      0.62      0.57       184
+
+avg / total       0.53      0.53      0.52       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 30 149]
+ [ 32 152]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.17      0.25       179
+        1.0       0.50      0.83      0.63       184
+
+avg / total       0.49      0.50      0.44       363
+
+[[ 30 149]
+ [ 30 154]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.17      0.25       179
+        1.0       0.51      0.84      0.63       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 51 128]
+ [ 53 131]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.28      0.36       179
+        1.0       0.51      0.71      0.59       184
+
+avg / total       0.50      0.50      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 33 146]
+ [ 33 151]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.18      0.27       179
+        1.0       0.51      0.82      0.63       184
+
+avg / total       0.50      0.51      0.45       363
+
+[[ 29 150]
+ [ 28 156]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.16      0.25       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.51      0.51      0.44       363
+
+[[ 64 115]
+ [ 67 117]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.36      0.41       179
+        1.0       0.50      0.64      0.56       184
+
+avg / total       0.50      0.50      0.49       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 30 149]
+ [ 32 152]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.17      0.25       179
+        1.0       0.50      0.83      0.63       184
+
+avg / total       0.49      0.50      0.44       363
+
+[[ 30 149]
+ [ 31 153]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.17      0.25       179
+        1.0       0.51      0.83      0.63       184
+
+avg / total       0.50      0.50      0.44       363
+
+[[ 48 131]
+ [ 47 137]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.27      0.35       179
+        1.0       0.51      0.74      0.61       184
+
+avg / total       0.51      0.51      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 33 146]
+ [ 32 152]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.18      0.27       179
+        1.0       0.51      0.83      0.63       184
+
+avg / total       0.51      0.51      0.45       363
+
+[[ 29 150]
+ [ 27 157]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.16      0.25       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.51      0.51      0.45       363
+
+[[ 55 124]
+ [ 57 127]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.31      0.38       179
+        1.0       0.51      0.69      0.58       184
+
+avg / total       0.50      0.50      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 38 141]
+ [ 50 134]]
+Accuracy 0.473829201102
+             precision    recall  f1-score   support
+
+        0.0       0.43      0.21      0.28       179
+        1.0       0.49      0.73      0.58       184
+
+avg / total       0.46      0.47      0.44       363
+
+[[ 73 106]
+ [ 65 119]]
+Accuracy 0.528925619835
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.41      0.46       179
+        1.0       0.53      0.65      0.58       184
+
+avg / total       0.53      0.53      0.52       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 30 149]
+ [ 32 152]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.17      0.25       179
+        1.0       0.50      0.83      0.63       184
+
+avg / total       0.49      0.50      0.44       363
+
+[[ 30 149]
+ [ 30 154]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.17      0.25       179
+        1.0       0.51      0.84      0.63       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 37 142]
+ [ 29 155]]
+Accuracy 0.528925619835
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.21      0.30       179
+        1.0       0.52      0.84      0.64       184
+
+avg / total       0.54      0.53      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 41 138]
+ [ 48 136]]
+Accuracy 0.487603305785
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.23      0.31       179
+        1.0       0.50      0.74      0.59       184
+
+avg / total       0.48      0.49      0.45       363
+
+[[ 72 107]
+ [ 67 117]]
+Accuracy 0.520661157025
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.40      0.45       179
+        1.0       0.52      0.64      0.57       184
+
+avg / total       0.52      0.52      0.51       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 30 149]
+ [ 26 158]]
+Accuracy 0.517906336088
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.17      0.26       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.53      0.52      0.45       363
+
+[[ 25 154]
+ [ 25 159]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.14      0.22       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.50      0.51      0.43       363
+
+[[ 39 140]
+ [ 28 156]]
+Accuracy 0.537190082645
+             precision    recall  f1-score   support
+
+        0.0       0.58      0.22      0.32       179
+        1.0       0.53      0.85      0.65       184
+
+avg / total       0.55      0.54      0.49       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 35 144]
+ [ 29 155]]
+Accuracy 0.523415977961
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.20      0.29       179
+        1.0       0.52      0.84      0.64       184
+
+avg / total       0.53      0.52      0.47       363
+
+[[ 28 151]
+ [ 26 158]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.16      0.24       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.51      0.51      0.44       363
+
+[[ 33 146]
+ [ 32 152]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.18      0.27       179
+        1.0       0.51      0.83      0.63       184
+
+avg / total       0.51      0.51      0.45       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 30 149]
+ [ 26 158]]
+Accuracy 0.517906336088
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.17      0.26       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.53      0.52      0.45       363
+
+[[ 25 154]
+ [ 25 159]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.14      0.22       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.50      0.51      0.43       363
+
+[[ 44 135]
+ [ 34 150]]
+Accuracy 0.534435261708
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.25      0.34       179
+        1.0       0.53      0.82      0.64       184
+
+avg / total       0.54      0.53      0.49       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 34 145]
+ [ 29 155]]
+Accuracy 0.520661157025
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.19      0.28       179
+        1.0       0.52      0.84      0.64       184
+
+avg / total       0.53      0.52      0.46       363
+
+[[ 28 151]
+ [ 26 158]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.16      0.24       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.51      0.51      0.44       363
+
+[[ 12 167]
+ [ 13 171]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.07      0.12       179
+        1.0       0.51      0.93      0.66       184
+
+avg / total       0.49      0.50      0.39       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 38 141]
+ [ 40 144]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.21      0.30       179
+        1.0       0.51      0.78      0.61       184
+
+avg / total       0.50      0.50      0.46       363
+
+[[ 73 106]
+ [ 71 113]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.41      0.45       179
+        1.0       0.52      0.61      0.56       184
+
+avg / total       0.51      0.51      0.51       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 30 149]
+ [ 26 158]]
+Accuracy 0.517906336088
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.17      0.26       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.53      0.52      0.45       363
+
+[[ 25 154]
+ [ 25 159]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.14      0.22       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.50      0.51      0.43       363
+
+[[ 28 151]
+ [ 25 159]]
+Accuracy 0.515151515152
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.16      0.24       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.52      0.52      0.45       363
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 39 140]
+ [ 42 142]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       179
+        1.0       0.50      0.77      0.61       184
+
+avg / total       0.49      0.50      0.46       363
+
+[[ 75 104]
+ [ 70 114]]
+Accuracy 0.520661157025
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.42      0.46       179
+        1.0       0.52      0.62      0.57       184
+
+avg / total       0.52      0.52      0.52       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 31 148]
+ [ 31 153]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.17      0.26       179
+        1.0       0.51      0.83      0.63       184
+
+avg / total       0.50      0.51      0.45       363
+
+[[ 26 153]
+ [ 27 157]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.15      0.22       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.50      0.50      0.43       363
+
+[[ 17 162]
+ [ 19 165]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.09      0.16       179
+        1.0       0.50      0.90      0.65       184
+
+avg / total       0.49      0.50      0.41       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 31 148]
+ [ 29 155]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.17      0.26       179
+        1.0       0.51      0.84      0.64       184
+
+avg / total       0.51      0.51      0.45       363
+
+[[ 27 152]
+ [ 25 159]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.15      0.23       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.52      0.51      0.44       363
+
+[[ 17 162]
+ [ 17 167]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.09      0.16       179
+        1.0       0.51      0.91      0.65       184
+
+avg / total       0.50      0.51      0.41       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+Backend TkAgg is interactive backend. Turning interactive mode on.
+[[ 31 148]
+ [ 31 153]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.17      0.26       179
+        1.0       0.51      0.83      0.63       184
+
+avg / total       0.50      0.51      0.45       363
+
+[[ 26 153]
+ [ 27 157]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.15      0.22       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.50      0.50      0.43       363
+
+[[ 23 156]
+ [ 24 160]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.13      0.20       179
+        1.0       0.51      0.87      0.64       184
+
+avg / total       0.50      0.50      0.42       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 31 148]
+ [ 29 155]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.17      0.26       179
+        1.0       0.51      0.84      0.64       184
+
+avg / total       0.51      0.51      0.45       363
+
+[[ 27 152]
+ [ 25 159]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.15      0.23       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.52      0.51      0.44       363
+
+[[ 16 163]
+ [ 17 167]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.09      0.15       179
+        1.0       0.51      0.91      0.65       184
+
+avg / total       0.50      0.50      0.40       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 54 125]
+ [ 57 127]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.30      0.37       179
+        1.0       0.50      0.69      0.58       184
+
+avg / total       0.50      0.50      0.48       363
+
+[[141  38]
+ [140  44]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.79      0.61       179
+        1.0       0.54      0.24      0.33       184
+
+avg / total       0.52      0.51      0.47       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 32 147]
+ [ 31 153]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.18      0.26       179
+        1.0       0.51      0.83      0.63       184
+
+avg / total       0.51      0.51      0.45       363
+
+[[ 25 154]
+ [ 27 157]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.14      0.22       179
+        1.0       0.50      0.85      0.63       184
+
+avg / total       0.49      0.50      0.43       363
+
+[[ 42 137]
+ [ 25 159]]
+Accuracy 0.553719008264
+             precision    recall  f1-score   support
+
+        0.0       0.63      0.23      0.34       179
+        1.0       0.54      0.86      0.66       184
+
+avg / total       0.58      0.55      0.50       363
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 54 125]
+ [ 58 126]]
+Accuracy 0.495867768595
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.30      0.37       179
+        1.0       0.50      0.68      0.58       184
+
+avg / total       0.49      0.50      0.48       363
+
+[[132  47]
+ [137  47]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.74      0.59       179
+        1.0       0.50      0.26      0.34       184
+
+avg / total       0.50      0.49      0.46       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 27 152]
+ [ 27 157]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.15      0.23       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 25 154]
+ [ 24 160]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.14      0.22       179
+        1.0       0.51      0.87      0.64       184
+
+avg / total       0.51      0.51      0.43       363
+
+[[ 37 142]
+ [ 40 144]]
+Accuracy 0.498622589532
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.21      0.29       179
+        1.0       0.50      0.78      0.61       184
+
+avg / total       0.49      0.50      0.45       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 29 150]
+ [ 24 160]]
+Accuracy 0.520661157025
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.16      0.25       179
+        1.0       0.52      0.87      0.65       184
+
+avg / total       0.53      0.52      0.45       363
+
+[[ 25 154]
+ [ 26 158]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.14      0.22       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.50      0.50      0.43       363
+
+[[ 29 150]
+ [ 19 165]]
+Accuracy 0.534435261708
+             precision    recall  f1-score   support
+
+        0.0       0.60      0.16      0.26       179
+        1.0       0.52      0.90      0.66       184
+
+avg / total       0.56      0.53      0.46       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 27 152]
+ [ 27 157]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.15      0.23       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 25 154]
+ [ 24 160]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.14      0.22       179
+        1.0       0.51      0.87      0.64       184
+
+avg / total       0.51      0.51      0.43       363
+
+[[ 35 144]
+ [ 25 159]]
+Accuracy 0.534435261708
+             precision    recall  f1-score   support
+
+        0.0       0.58      0.20      0.29       179
+        1.0       0.52      0.86      0.65       184
+
+avg / total       0.55      0.53      0.48       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 29 150]
+ [ 24 160]]
+Accuracy 0.520661157025
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.16      0.25       179
+        1.0       0.52      0.87      0.65       184
+
+avg / total       0.53      0.52      0.45       363
+
+[[ 25 154]
+ [ 25 159]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.14      0.22       179
+        1.0       0.51      0.86      0.64       184
+
+avg / total       0.50      0.51      0.43       363
+
+[[ 24 155]
+ [ 18 166]]
+Accuracy 0.523415977961
+             precision    recall  f1-score   support
+
+        0.0       0.57      0.13      0.22       179
+        1.0       0.52      0.90      0.66       184
+
+avg / total       0.54      0.52      0.44       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 63 116]
+ [ 64 120]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.35      0.41       179
+        1.0       0.51      0.65      0.57       184
+
+avg / total       0.50      0.50      0.49       363
+
+[[160  19]
+ [158  26]]
+Accuracy 0.512396694215
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.89      0.64       179
+        1.0       0.58      0.14      0.23       184
+
+avg / total       0.54      0.51      0.43       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 27 152]
+ [ 27 157]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.15      0.23       179
+        1.0       0.51      0.85      0.64       184
+
+avg / total       0.50      0.51      0.44       363
+
+[[ 25 154]
+ [ 24 160]]
+Accuracy 0.509641873278
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.14      0.22       179
+        1.0       0.51      0.87      0.64       184
+
+avg / total       0.51      0.51      0.43       363
+
+[[ 22 157]
+ [ 22 162]]
+Accuracy 0.506887052342
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.12      0.20       179
+        1.0       0.51      0.88      0.64       184
+
+avg / total       0.50      0.51      0.42       363
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_stocks_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 64 115]
+ [ 65 119]]
+Accuracy 0.504132231405
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.36      0.42       179
+        1.0       0.51      0.65      0.57       184
+
+avg / total       0.50      0.50      0.49       363
+
+[[157  22]
+ [159  25]]
+Accuracy 0.501377410468
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.88      0.63       179
+        1.0       0.53      0.14      0.22       184
+
+avg / total       0.51      0.50      0.42       363
+
+[[179   0]
+ [184   0]]
+Accuracy 0.493112947658
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       179
+        1.0       0.00      0.00      0.00       184
+
+avg / total       0.24      0.49      0.33       363
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 45 145]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.24      0.32       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.50      0.50      0.47       375
+
+[[ 43 142]
+ [ 47 143]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.23      0.31       185
+        1.0       0.50      0.75      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 66 119]
+ [ 70 120]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.36      0.41       185
+        1.0       0.50      0.63      0.56       190
+
+avg / total       0.49      0.50      0.49       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 50 135]
+ [ 48 142]]
+Accuracy 0.512
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.27      0.35       185
+        1.0       0.51      0.75      0.61       190
+
+avg / total       0.51      0.51      0.48       375
+
+[[ 47 138]
+ [ 49 141]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.33       185
+        1.0       0.51      0.74      0.60       190
+
+avg / total       0.50      0.50      0.47       375
+
+[[ 74 111]
+ [ 71 119]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.40      0.45       185
+        1.0       0.52      0.63      0.57       190
+
+avg / total       0.51      0.51      0.51       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 45 145]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.24      0.32       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.50      0.50      0.47       375
+
+[[ 43 142]
+ [ 47 143]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.23      0.31       185
+        1.0       0.50      0.75      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 65 120]
+ [ 71 119]]
+Accuracy 0.490666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.35      0.40       185
+        1.0       0.50      0.63      0.55       190
+
+avg / total       0.49      0.49      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 50 135]
+ [ 48 142]]
+Accuracy 0.512
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.27      0.35       185
+        1.0       0.51      0.75      0.61       190
+
+avg / total       0.51      0.51      0.48       375
+
+[[ 47 138]
+ [ 49 141]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.33       185
+        1.0       0.51      0.74      0.60       190
+
+avg / total       0.50      0.50      0.47       375
+
+[[ 68 117]
+ [ 77 113]]
+Accuracy 0.482666666667
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.37      0.41       185
+        1.0       0.49      0.59      0.54       190
+
+avg / total       0.48      0.48      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 45 145]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.32       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.50      0.50      0.46       375
+
+[[ 28 157]
+ [ 28 162]]
+Accuracy 0.506666666667
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.15      0.23       185
+        1.0       0.51      0.85      0.64       190
+
+avg / total       0.50      0.51      0.44       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 44 141]
+ [ 45 145]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.24      0.32       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.50      0.50      0.47       375
+
+[[ 44 141]
+ [ 47 143]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.24      0.32       185
+        1.0       0.50      0.75      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 72 113]
+ [ 71 119]]
+Accuracy 0.509333333333
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.39      0.44       185
+        1.0       0.51      0.63      0.56       190
+
+avg / total       0.51      0.51      0.50       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 40 145]
+ [ 42 148]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       185
+        1.0       0.51      0.78      0.61       190
+
+avg / total       0.50      0.50      0.46       375
+
+[[ 27 158]
+ [ 31 159]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.15      0.22       185
+        1.0       0.50      0.84      0.63       190
+
+avg / total       0.48      0.50      0.43       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 49 136]
+ [ 44 146]]
+Accuracy 0.52
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.26      0.35       185
+        1.0       0.52      0.77      0.62       190
+
+avg / total       0.52      0.52      0.49       375
+
+[[ 46 139]
+ [ 49 141]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 58 127]
+ [ 60 130]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.31      0.38       185
+        1.0       0.51      0.68      0.58       190
+
+avg / total       0.50      0.50      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 49 141]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.24      0.32       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 47 138]
+ [ 51 139]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.73      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 46 139]
+ [ 47 143]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.33       185
+        1.0       0.51      0.75      0.61       190
+
+avg / total       0.50      0.50      0.47       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 49 136]
+ [ 44 146]]
+Accuracy 0.52
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.26      0.35       185
+        1.0       0.52      0.77      0.62       190
+
+avg / total       0.52      0.52      0.49       375
+
+[[ 46 139]
+ [ 49 141]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 58 127]
+ [ 49 141]]
+Accuracy 0.530666666667
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.31      0.40       185
+        1.0       0.53      0.74      0.62       190
+
+avg / total       0.53      0.53      0.51       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 49 141]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.24      0.32       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.49      0.46       375
+
+[[ 47 138]
+ [ 51 139]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.73      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 55 130]
+ [ 52 138]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.30      0.38       185
+        1.0       0.51      0.73      0.60       190
+
+avg / total       0.51      0.51      0.49       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 40 150]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.23      0.32       185
+        1.0       0.51      0.79      0.62       190
+
+avg / total       0.52      0.51      0.47       375
+
+[[ 26 159]
+ [ 28 162]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.14      0.22       185
+        1.0       0.50      0.85      0.63       190
+
+avg / total       0.49      0.50      0.43       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 48 137]
+ [ 44 146]]
+Accuracy 0.517333333333
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.26      0.35       185
+        1.0       0.52      0.77      0.62       190
+
+avg / total       0.52      0.52      0.48       375
+
+[[ 46 139]
+ [ 49 141]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 52 133]
+ [ 57 133]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.28      0.35       185
+        1.0       0.50      0.70      0.58       190
+
+avg / total       0.49      0.49      0.47       375
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 38 147]
+ [ 38 152]]
+Accuracy 0.506666666667
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.21      0.29       185
+        1.0       0.51      0.80      0.62       190
+
+avg / total       0.50      0.51      0.46       375
+
+[[ 21 164]
+ [ 31 159]]
+Accuracy 0.48
+             precision    recall  f1-score   support
+
+        0.0       0.40      0.11      0.18       185
+        1.0       0.49      0.84      0.62       190
+
+avg / total       0.45      0.48      0.40       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 42 148]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       185
+        1.0       0.51      0.78      0.62       190
+
+avg / total       0.52      0.51      0.48       375
+
+[[ 47 138]
+ [ 50 140]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 46 139]
+ [ 56 134]]
+Accuracy 0.48
+             precision    recall  f1-score   support
+
+        0.0       0.45      0.25      0.32       185
+        1.0       0.49      0.71      0.58       190
+
+avg / total       0.47      0.48      0.45       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 49 136]
+ [ 52 138]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.26      0.34       185
+        1.0       0.50      0.73      0.59       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 45 140]
+ [ 51 139]]
+Accuracy 0.490666666667
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.24      0.32       185
+        1.0       0.50      0.73      0.59       190
+
+avg / total       0.48      0.49      0.46       375
+
+[[ 48 137]
+ [ 46 144]]
+Accuracy 0.512
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.26      0.34       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.51      0.51      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 43 147]]
+Accuracy 0.512
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.33       185
+        1.0       0.51      0.77      0.62       190
+
+avg / total       0.51      0.51      0.47       375
+
+[[ 47 138]
+ [ 50 140]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 64 121]
+ [ 65 125]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.35      0.41       185
+        1.0       0.51      0.66      0.57       190
+
+avg / total       0.50      0.50      0.49       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 48 137]
+ [ 52 138]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.26      0.34       185
+        1.0       0.50      0.73      0.59       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 44 141]
+ [ 51 139]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.24      0.31       185
+        1.0       0.50      0.73      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 57 128]
+ [ 62 128]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.31      0.38       185
+        1.0       0.50      0.67      0.57       190
+
+avg / total       0.49      0.49      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 42 148]]
+Accuracy 0.509333333333
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.23      0.32       185
+        1.0       0.51      0.78      0.62       190
+
+avg / total       0.51      0.51      0.47       375
+
+[[ 23 162]
+ [ 30 160]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.43      0.12      0.19       185
+        1.0       0.50      0.84      0.62       190
+
+avg / total       0.47      0.49      0.41       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 45 140]
+ [ 42 148]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       185
+        1.0       0.51      0.78      0.62       190
+
+avg / total       0.52      0.51      0.48       375
+
+[[ 47 138]
+ [ 50 140]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.25      0.33       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.50      0.47       375
+
+[[ 50 135]
+ [ 55 135]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.27      0.34       185
+        1.0       0.50      0.71      0.59       190
+
+avg / total       0.49      0.49      0.47       375
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 41 144]
+ [ 40 150]]
+Accuracy 0.509333333333
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.31       185
+        1.0       0.51      0.79      0.62       190
+
+avg / total       0.51      0.51      0.47       375
+
+[[ 20 165]
+ [ 27 163]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.43      0.11      0.17       185
+        1.0       0.50      0.86      0.63       190
+
+avg / total       0.46      0.49      0.40       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 46 144]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.23      0.31       185
+        1.0       0.50      0.76      0.61       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 41 144]
+ [ 49 141]]
+Accuracy 0.485333333333
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.22      0.30       185
+        1.0       0.49      0.74      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 44 141]
+ [ 45 145]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.24      0.32       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.50      0.50      0.47       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 49 141]]
+Accuracy 0.490666666667
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.23      0.31       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.48      0.49      0.46       375
+
+[[ 40 145]
+ [ 51 139]]
+Accuracy 0.477333333333
+             precision    recall  f1-score   support
+
+        0.0       0.44      0.22      0.29       185
+        1.0       0.49      0.73      0.59       190
+
+avg / total       0.46      0.48      0.44       375
+
+[[ 50 135]
+ [ 61 129]]
+Accuracy 0.477333333333
+             precision    recall  f1-score   support
+
+        0.0       0.45      0.27      0.34       185
+        1.0       0.49      0.68      0.57       190
+
+avg / total       0.47      0.48      0.45       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 47 143]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.23      0.31       185
+        1.0       0.50      0.75      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 41 144]
+ [ 49 141]]
+Accuracy 0.485333333333
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.22      0.30       185
+        1.0       0.49      0.74      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 44 141]
+ [ 49 141]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.24      0.32       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.49      0.46       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 49 141]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.23      0.30       185
+        1.0       0.50      0.74      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 40 145]
+ [ 51 139]]
+Accuracy 0.477333333333
+             precision    recall  f1-score   support
+
+        0.0       0.44      0.22      0.29       185
+        1.0       0.49      0.73      0.59       190
+
+avg / total       0.46      0.48      0.44       375
+
+[[ 45 140]
+ [ 50 140]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.24      0.32       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.49      0.46       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 39 151]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.23      0.32       185
+        1.0       0.51      0.79      0.62       190
+
+avg / total       0.52      0.51      0.47       375
+
+[[ 23 162]
+ [ 28 162]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.45      0.12      0.19       185
+        1.0       0.50      0.85      0.63       190
+
+avg / total       0.48      0.49      0.42       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 42 143]
+ [ 45 145]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.23      0.31       185
+        1.0       0.50      0.76      0.61       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 44 141]
+ [ 49 141]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.24      0.32       185
+        1.0       0.50      0.74      0.60       190
+
+avg / total       0.49      0.49      0.46       375
+
+[[ 51 134]
+ [ 59 131]]
+Accuracy 0.485333333333
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.28      0.35       185
+        1.0       0.49      0.69      0.58       190
+
+avg / total       0.48      0.49      0.46       375
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 39 146]
+ [ 43 147]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.21      0.29       185
+        1.0       0.50      0.77      0.61       190
+
+avg / total       0.49      0.50      0.45       375
+
+[[ 21 164]
+ [ 27 163]]
+Accuracy 0.490666666667
+             precision    recall  f1-score   support
+
+        0.0       0.44      0.11      0.18       185
+        1.0       0.50      0.86      0.63       190
+
+avg / total       0.47      0.49      0.41       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 50 140]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.23      0.31       185
+        1.0       0.50      0.74      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 54 131]
+ [ 51 139]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.29      0.37       185
+        1.0       0.51      0.73      0.60       190
+
+avg / total       0.51      0.51      0.49       375
+
+[[ 61 124]
+ [ 60 130]]
+Accuracy 0.509333333333
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.33      0.40       185
+        1.0       0.51      0.68      0.59       190
+
+avg / total       0.51      0.51      0.49       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 48 142]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.24      0.32       185
+        1.0       0.50      0.75      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 46 139]
+ [ 52 138]]
+Accuracy 0.490666666667
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.25      0.33       185
+        1.0       0.50      0.73      0.59       190
+
+avg / total       0.48      0.49      0.46       375
+
+[[ 47 138]
+ [ 45 145]]
+Accuracy 0.512
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.25      0.34       185
+        1.0       0.51      0.76      0.61       190
+
+avg / total       0.51      0.51      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 43 142]
+ [ 50 140]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.23      0.31       185
+        1.0       0.50      0.74      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 54 131]
+ [ 51 139]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.29      0.37       185
+        1.0       0.51      0.73      0.60       190
+
+avg / total       0.51      0.51      0.49       375
+
+[[ 53 132]
+ [ 54 136]]
+Accuracy 0.504
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.29      0.36       185
+        1.0       0.51      0.72      0.59       190
+
+avg / total       0.50      0.50      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 48 142]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.24      0.32       185
+        1.0       0.50      0.75      0.60       190
+
+avg / total       0.49      0.50      0.46       375
+
+[[ 45 140]
+ [ 52 138]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.24      0.32       185
+        1.0       0.50      0.73      0.59       190
+
+avg / total       0.48      0.49      0.46       375
+
+[[ 45 140]
+ [ 65 125]]
+Accuracy 0.453333333333
+             precision    recall  f1-score   support
+
+        0.0       0.41      0.24      0.31       185
+        1.0       0.47      0.66      0.55       190
+
+avg / total       0.44      0.45      0.43       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 40 145]
+ [ 42 148]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       185
+        1.0       0.51      0.78      0.61       190
+
+avg / total       0.50      0.50      0.46       375
+
+[[ 26 159]
+ [ 31 159]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.14      0.21       185
+        1.0       0.50      0.84      0.63       190
+
+avg / total       0.48      0.49      0.42       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 43 142]
+ [ 50 140]]
+Accuracy 0.488
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.23      0.31       185
+        1.0       0.50      0.74      0.59       190
+
+avg / total       0.48      0.49      0.45       375
+
+[[ 54 131]
+ [ 51 139]]
+Accuracy 0.514666666667
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.29      0.37       185
+        1.0       0.51      0.73      0.60       190
+
+avg / total       0.51      0.51      0.49       375
+
+[[ 56 129]
+ [ 60 130]]
+Accuracy 0.496
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.30      0.37       185
+        1.0       0.50      0.68      0.58       190
+
+avg / total       0.49      0.50      0.48       375
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_news_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 40 145]
+ [ 42 148]]
+Accuracy 0.501333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       185
+        1.0       0.51      0.78      0.61       190
+
+avg / total       0.50      0.50      0.46       375
+
+[[ 24 161]
+ [ 27 163]]
+Accuracy 0.498666666667
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.13      0.20       185
+        1.0       0.50      0.86      0.63       190
+
+avg / total       0.49      0.50      0.42       375
+
+[[185   0]
+ [190   0]]
+Accuracy 0.493333333333
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       190
+
+avg / total       0.24      0.49      0.33       375
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 43 148]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.32       185
+        1.0       0.51      0.77      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 47 138]
+ [ 48 143]]
+Accuracy 0.505319148936
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.34       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.50      0.51      0.47       376
+
+[[ 67 118]
+ [ 66 125]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.36      0.42       185
+        1.0       0.51      0.65      0.58       191
+
+avg / total       0.51      0.51      0.50       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 42 149]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.32       185
+        1.0       0.51      0.78      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 46 139]
+ [ 46 145]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.25      0.33       185
+        1.0       0.51      0.76      0.61       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 55 130]
+ [ 57 134]]
+Accuracy 0.502659574468
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.30      0.37       185
+        1.0       0.51      0.70      0.59       191
+
+avg / total       0.50      0.50      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 43 148]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.32       185
+        1.0       0.51      0.77      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 47 138]
+ [ 48 143]]
+Accuracy 0.505319148936
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.34       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.50      0.51      0.47       376
+
+[[ 71 114]
+ [ 69 122]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.38      0.44       185
+        1.0       0.52      0.64      0.57       191
+
+avg / total       0.51      0.51      0.51       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 42 149]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.32       185
+        1.0       0.51      0.78      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 46 139]
+ [ 46 145]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.25      0.33       185
+        1.0       0.51      0.76      0.61       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 66 119]
+ [ 62 129]]
+Accuracy 0.518617021277
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.36      0.42       185
+        1.0       0.52      0.68      0.59       191
+
+avg / total       0.52      0.52      0.51       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 41 150]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.23      0.31       185
+        1.0       0.51      0.79      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 26 159]
+ [ 23 168]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.14      0.22       185
+        1.0       0.51      0.88      0.65       191
+
+avg / total       0.52      0.52      0.44       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 44 141]
+ [ 42 149]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.32       185
+        1.0       0.51      0.78      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 47 138]
+ [ 48 143]]
+Accuracy 0.505319148936
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.34       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.50      0.51      0.47       376
+
+[[ 70 115]
+ [ 77 114]]
+Accuracy 0.489361702128
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.38      0.42       185
+        1.0       0.50      0.60      0.54       191
+
+avg / total       0.49      0.49      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 39 146]
+ [ 36 155]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.21      0.30       185
+        1.0       0.51      0.81      0.63       191
+
+avg / total       0.52      0.52      0.47       376
+
+[[ 23 162]
+ [ 22 169]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.12      0.20       185
+        1.0       0.51      0.88      0.65       191
+
+avg / total       0.51      0.51      0.43       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 39 146]
+ [ 39 152]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.21      0.30       185
+        1.0       0.51      0.80      0.62       191
+
+avg / total       0.51      0.51      0.46       376
+
+[[ 43 142]
+ [ 44 147]]
+Accuracy 0.505319148936
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.32       185
+        1.0       0.51      0.77      0.61       191
+
+avg / total       0.50      0.51      0.47       376
+
+[[ 75 110]
+ [ 65 126]]
+Accuracy 0.534574468085
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.41      0.46       185
+        1.0       0.53      0.66      0.59       191
+
+avg / total       0.53      0.53      0.53       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 37 154]]
+Accuracy 0.521276595745
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.23      0.32       185
+        1.0       0.52      0.81      0.63       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 46 139]
+ [ 39 152]]
+Accuracy 0.526595744681
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.25      0.34       185
+        1.0       0.52      0.80      0.63       191
+
+avg / total       0.53      0.53      0.49       376
+
+[[ 53 132]
+ [ 53 138]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.29      0.36       185
+        1.0       0.51      0.72      0.60       191
+
+avg / total       0.51      0.51      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 39 146]
+ [ 39 152]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.21      0.30       185
+        1.0       0.51      0.80      0.62       191
+
+avg / total       0.51      0.51      0.46       376
+
+[[ 43 142]
+ [ 44 147]]
+Accuracy 0.505319148936
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.32       185
+        1.0       0.51      0.77      0.61       191
+
+avg / total       0.50      0.51      0.47       376
+
+[[ 80 105]
+ [ 74 117]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.43      0.47       185
+        1.0       0.53      0.61      0.57       191
+
+avg / total       0.52      0.52      0.52       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 42 143]
+ [ 37 154]]
+Accuracy 0.521276595745
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.23      0.32       185
+        1.0       0.52      0.81      0.63       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 46 139]
+ [ 39 152]]
+Accuracy 0.526595744681
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.25      0.34       185
+        1.0       0.52      0.80      0.63       191
+
+avg / total       0.53      0.53      0.49       376
+
+[[ 60 125]
+ [ 65 126]]
+Accuracy 0.494680851064
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.32      0.39       185
+        1.0       0.50      0.66      0.57       191
+
+avg / total       0.49      0.49      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 39 146]
+ [ 33 158]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.21      0.30       185
+        1.0       0.52      0.83      0.64       191
+
+avg / total       0.53      0.52      0.47       376
+
+[[ 26 159]
+ [ 24 167]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.14      0.22       185
+        1.0       0.51      0.87      0.65       191
+
+avg / total       0.52      0.51      0.44       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 39 146]
+ [ 39 152]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.21      0.30       185
+        1.0       0.51      0.80      0.62       191
+
+avg / total       0.51      0.51      0.46       376
+
+[[ 42 143]
+ [ 44 147]]
+Accuracy 0.502659574468
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       185
+        1.0       0.51      0.77      0.61       191
+
+avg / total       0.50      0.50      0.46       376
+
+[[ 61 124]
+ [ 64 127]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.33      0.39       185
+        1.0       0.51      0.66      0.57       191
+
+avg / total       0.50      0.50      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 39 146]
+ [ 34 157]]
+Accuracy 0.521276595745
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.21      0.30       185
+        1.0       0.52      0.82      0.64       191
+
+avg / total       0.53      0.52      0.47       376
+
+[[ 24 161]
+ [ 22 169]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.13      0.21       185
+        1.0       0.51      0.88      0.65       191
+
+avg / total       0.52      0.51      0.43       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 47 138]
+ [ 41 150]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.25      0.34       185
+        1.0       0.52      0.79      0.63       191
+
+avg / total       0.53      0.52      0.49       376
+
+[[ 52 133]
+ [ 50 141]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.28      0.36       185
+        1.0       0.51      0.74      0.61       191
+
+avg / total       0.51      0.51      0.49       376
+
+[[ 78 107]
+ [ 83 108]]
+Accuracy 0.494680851064
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.42      0.45       185
+        1.0       0.50      0.57      0.53       191
+
+avg / total       0.49      0.49      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 46 139]
+ [ 43 148]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.25      0.34       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 47 138]
+ [ 47 144]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.25      0.34       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.51      0.51      0.48       376
+
+[[ 72 113]
+ [ 82 109]]
+Accuracy 0.481382978723
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.39      0.42       185
+        1.0       0.49      0.57      0.53       191
+
+avg / total       0.48      0.48      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 47 138]
+ [ 41 150]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.25      0.34       185
+        1.0       0.52      0.79      0.63       191
+
+avg / total       0.53      0.52      0.49       376
+
+[[ 52 133]
+ [ 50 141]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.28      0.36       185
+        1.0       0.51      0.74      0.61       191
+
+avg / total       0.51      0.51      0.49       376
+
+[[ 78 107]
+ [ 73 118]]
+Accuracy 0.521276595745
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.42      0.46       185
+        1.0       0.52      0.62      0.57       191
+
+avg / total       0.52      0.52      0.52       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 46 139]
+ [ 43 148]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.25      0.34       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 47 138]
+ [ 47 144]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.25      0.34       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.51      0.51      0.48       376
+
+[[ 64 121]
+ [ 70 121]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.35      0.40       185
+        1.0       0.50      0.63      0.56       191
+
+avg / total       0.49      0.49      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 36 155]]
+Accuracy 0.531914893617
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.24      0.34       185
+        1.0       0.53      0.81      0.64       191
+
+avg / total       0.54      0.53      0.49       376
+
+[[ 27 158]
+ [ 25 166]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.15      0.23       185
+        1.0       0.51      0.87      0.64       191
+
+avg / total       0.52      0.51      0.44       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 47 138]
+ [ 41 150]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.25      0.34       185
+        1.0       0.52      0.79      0.63       191
+
+avg / total       0.53      0.52      0.49       376
+
+[[ 52 133]
+ [ 50 141]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.28      0.36       185
+        1.0       0.51      0.74      0.61       191
+
+avg / total       0.51      0.51      0.49       376
+
+[[ 70 115]
+ [ 75 116]]
+Accuracy 0.494680851064
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.38      0.42       185
+        1.0       0.50      0.61      0.55       191
+
+avg / total       0.49      0.49      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 41 144]
+ [ 35 156]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.22      0.31       185
+        1.0       0.52      0.82      0.64       191
+
+avg / total       0.53      0.52      0.48       376
+
+[[ 25 160]
+ [ 22 169]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.14      0.22       185
+        1.0       0.51      0.88      0.65       191
+
+avg / total       0.52      0.52      0.44       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 47 138]
+ [ 44 147]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.25      0.34       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 51 134]
+ [ 49 142]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.28      0.36       185
+        1.0       0.51      0.74      0.61       191
+
+avg / total       0.51      0.51      0.49       376
+
+[[ 65 120]
+ [ 67 124]]
+Accuracy 0.502659574468
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.35      0.41       185
+        1.0       0.51      0.65      0.57       191
+
+avg / total       0.50      0.50      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 48 137]
+ [ 41 150]]
+Accuracy 0.526595744681
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.26      0.35       185
+        1.0       0.52      0.79      0.63       191
+
+avg / total       0.53      0.53      0.49       376
+
+[[ 49 136]
+ [ 47 144]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.26      0.35       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.51      0.51      0.48       376
+
+[[ 56 129]
+ [ 56 135]]
+Accuracy 0.507978723404
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.30      0.38       185
+        1.0       0.51      0.71      0.59       191
+
+avg / total       0.51      0.51      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 47 138]
+ [ 44 147]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.25      0.34       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 51 134]
+ [ 49 142]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.28      0.36       185
+        1.0       0.51      0.74      0.61       191
+
+avg / total       0.51      0.51      0.49       376
+
+[[ 63 122]
+ [ 73 118]]
+Accuracy 0.481382978723
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.34      0.39       185
+        1.0       0.49      0.62      0.55       191
+
+avg / total       0.48      0.48      0.47       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 48 137]
+ [ 41 150]]
+Accuracy 0.526595744681
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.26      0.35       185
+        1.0       0.52      0.79      0.63       191
+
+avg / total       0.53      0.53      0.49       376
+
+[[ 49 136]
+ [ 47 144]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.26      0.35       185
+        1.0       0.51      0.75      0.61       191
+
+avg / total       0.51      0.51      0.48       376
+
+[[ 60 125]
+ [ 66 125]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.32      0.39       185
+        1.0       0.50      0.65      0.57       191
+
+avg / total       0.49      0.49      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 46 139]
+ [ 39 152]]
+Accuracy 0.526595744681
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.25      0.34       185
+        1.0       0.52      0.80      0.63       191
+
+avg / total       0.53      0.53      0.49       376
+
+[[ 33 152]
+ [ 24 167]]
+Accuracy 0.531914893617
+             precision    recall  f1-score   support
+
+        0.0       0.58      0.18      0.27       185
+        1.0       0.52      0.87      0.65       191
+
+avg / total       0.55      0.53      0.47       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 48 137]
+ [ 42 149]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.26      0.35       185
+        1.0       0.52      0.78      0.62       191
+
+avg / total       0.53      0.52      0.49       376
+
+[[ 51 134]
+ [ 49 142]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.28      0.36       185
+        1.0       0.51      0.74      0.61       191
+
+avg / total       0.51      0.51      0.49       376
+
+[[ 64 121]
+ [ 67 124]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.35      0.41       185
+        1.0       0.51      0.65      0.57       191
+
+avg / total       0.50      0.50      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 39 146]
+ [ 38 153]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.21      0.30       185
+        1.0       0.51      0.80      0.62       191
+
+avg / total       0.51      0.51      0.46       376
+
+[[ 28 157]
+ [ 19 172]]
+Accuracy 0.531914893617
+             precision    recall  f1-score   support
+
+        0.0       0.60      0.15      0.24       185
+        1.0       0.52      0.90      0.66       191
+
+avg / total       0.56      0.53      0.45       376
+
+[[184   1]
+ [191   0]]
+Accuracy 0.489361702128
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.99      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 41 150]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       185
+        1.0       0.52      0.79      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 48 137]
+ [ 44 147]]
+Accuracy 0.518617021277
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.26      0.35       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 67 118]
+ [ 71 120]]
+Accuracy 0.497340425532
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.36      0.41       185
+        1.0       0.50      0.63      0.56       191
+
+avg / total       0.50      0.50      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 39 152]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.24      0.33       185
+        1.0       0.52      0.80      0.63       191
+
+avg / total       0.53      0.52      0.48       376
+
+[[ 46 139]
+ [ 44 147]]
+Accuracy 0.51329787234
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.25      0.33       185
+        1.0       0.51      0.77      0.62       191
+
+avg / total       0.51      0.51      0.48       376
+
+[[ 66 119]
+ [ 73 118]]
+Accuracy 0.489361702128
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.36      0.41       185
+        1.0       0.50      0.62      0.55       191
+
+avg / total       0.49      0.49      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 44 141]
+ [ 41 150]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       185
+        1.0       0.52      0.79      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 48 137]
+ [ 44 147]]
+Accuracy 0.518617021277
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.26      0.35       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 74 111]
+ [ 80 111]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.40      0.44       185
+        1.0       0.50      0.58      0.54       191
+
+avg / total       0.49      0.49      0.49       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 45 140]
+ [ 39 152]]
+Accuracy 0.523936170213
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.24      0.33       185
+        1.0       0.52      0.80      0.63       191
+
+avg / total       0.53      0.52      0.48       376
+
+[[ 46 139]
+ [ 43 148]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.25      0.34       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 54 131]
+ [ 63 128]]
+Accuracy 0.484042553191
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.29      0.36       185
+        1.0       0.49      0.67      0.57       191
+
+avg / total       0.48      0.48      0.46       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 40 145]
+ [ 39 152]]
+Accuracy 0.510638297872
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.30       185
+        1.0       0.51      0.80      0.62       191
+
+avg / total       0.51      0.51      0.47       376
+
+[[ 28 157]
+ [ 29 162]]
+Accuracy 0.505319148936
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.15      0.23       185
+        1.0       0.51      0.85      0.64       191
+
+avg / total       0.50      0.51      0.44       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 44 141]
+ [ 41 150]]
+Accuracy 0.515957446809
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       185
+        1.0       0.52      0.79      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 48 137]
+ [ 44 147]]
+Accuracy 0.518617021277
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.26      0.35       185
+        1.0       0.52      0.77      0.62       191
+
+avg / total       0.52      0.52      0.48       376
+
+[[ 67 118]
+ [ 73 118]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.36      0.41       185
+        1.0       0.50      0.62      0.55       191
+
+avg / total       0.49      0.49      0.48       376
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_technology_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 40 145]
+ [ 36 155]]
+Accuracy 0.518617021277
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.22      0.31       185
+        1.0       0.52      0.81      0.63       191
+
+avg / total       0.52      0.52      0.47       376
+
+[[ 25 160]
+ [ 18 173]]
+Accuracy 0.526595744681
+             precision    recall  f1-score   support
+
+        0.0       0.58      0.14      0.22       185
+        1.0       0.52      0.91      0.66       191
+
+avg / total       0.55      0.53      0.44       376
+
+[[185   0]
+ [191   0]]
+Accuracy 0.492021276596
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       185
+        1.0       0.00      0.00      0.00       191
+
+avg / total       0.24      0.49      0.32       376
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 48 138]
+ [ 39 153]]
+Accuracy 0.531746031746
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.26      0.35       186
+        1.0       0.53      0.80      0.63       192
+
+avg / total       0.54      0.53      0.49       378
+
+[[ 50 136]
+ [ 41 151]]
+Accuracy 0.531746031746
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.27      0.36       186
+        1.0       0.53      0.79      0.63       192
+
+avg / total       0.54      0.53      0.50       378
+
+[[ 46 140]
+ [ 52 140]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.25      0.32       186
+        1.0       0.50      0.73      0.59       192
+
+avg / total       0.48      0.49      0.46       378
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 46 140]
+ [ 47 145]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.33       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.50      0.51      0.47       378
+
+[[ 48 138]
+ [ 50 142]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.26      0.34       186
+        1.0       0.51      0.74      0.60       192
+
+avg / total       0.50      0.50      0.47       378
+
+[[ 42 144]
+ [ 52 140]]
+Accuracy 0.481481481481
+             precision    recall  f1-score   support
+
+        0.0       0.45      0.23      0.30       186
+        1.0       0.49      0.73      0.59       192
+
+avg / total       0.47      0.48      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 48 138]
+ [ 39 153]]
+Accuracy 0.531746031746
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.26      0.35       186
+        1.0       0.53      0.80      0.63       192
+
+avg / total       0.54      0.53      0.49       378
+
+[[ 50 136]
+ [ 41 151]]
+Accuracy 0.531746031746
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.27      0.36       186
+        1.0       0.53      0.79      0.63       192
+
+avg / total       0.54      0.53      0.50       378
+
+[[ 33 153]
+ [ 39 153]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.18      0.26       186
+        1.0       0.50      0.80      0.61       192
+
+avg / total       0.48      0.49      0.44       378
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 46 140]
+ [ 47 145]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.25      0.33       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.50      0.51      0.47       378
+
+[[ 48 138]
+ [ 51 141]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.26      0.34       186
+        1.0       0.51      0.73      0.60       192
+
+avg / total       0.50      0.50      0.47       378
+
+[[ 64 122]
+ [ 66 126]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.34      0.41       186
+        1.0       0.51      0.66      0.57       192
+
+avg / total       0.50      0.50      0.49       378
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 143]
+ [ 37 155]]
+Accuracy 0.52380952381
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.23      0.32       186
+        1.0       0.52      0.81      0.63       192
+
+avg / total       0.53      0.52      0.48       378
+
+[[ 43 143]
+ [ 35 157]]
+Accuracy 0.529100529101
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.23      0.33       186
+        1.0       0.52      0.82      0.64       192
+
+avg / total       0.54      0.53      0.48       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 48 138]
+ [ 38 154]]
+Accuracy 0.534391534392
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.26      0.35       186
+        1.0       0.53      0.80      0.64       192
+
+avg / total       0.54      0.53      0.50       378
+
+[[ 49 137]
+ [ 41 151]]
+Accuracy 0.529100529101
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.26      0.36       186
+        1.0       0.52      0.79      0.63       192
+
+avg / total       0.53      0.53      0.49       378
+
+[[ 35 151]
+ [ 37 155]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.27       186
+        1.0       0.51      0.81      0.62       192
+
+avg / total       0.50      0.50      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': -2, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 47 139]
+ [ 43 149]]
+Accuracy 0.518518518519
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.25      0.34       186
+        1.0       0.52      0.78      0.62       192
+
+avg / total       0.52      0.52      0.48       378
+
+[[ 44 142]
+ [ 42 150]]
+Accuracy 0.513227513228
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.24      0.32       186
+        1.0       0.51      0.78      0.62       192
+
+avg / total       0.51      0.51      0.47       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 40 146]
+ [ 40 152]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.22      0.30       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.46       378
+
+[[ 42 144]
+ [ 44 148]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       186
+        1.0       0.51      0.77      0.61       192
+
+avg / total       0.50      0.50      0.46       378
+
+[[ 36 150]
+ [ 38 154]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.28       186
+        1.0       0.51      0.80      0.62       192
+
+avg / total       0.50      0.50      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 45 141]
+ [ 47 145]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.24      0.32       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.50      0.50      0.47       378
+
+[[ 49 137]
+ [ 51 141]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.26      0.34       186
+        1.0       0.51      0.73      0.60       192
+
+avg / total       0.50      0.50      0.47       378
+
+[[ 65 121]
+ [ 63 129]]
+Accuracy 0.513227513228
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.35      0.41       186
+        1.0       0.52      0.67      0.58       192
+
+avg / total       0.51      0.51      0.50       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 40 146]
+ [ 40 152]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.22      0.30       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.46       378
+
+[[ 42 144]
+ [ 44 148]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       186
+        1.0       0.51      0.77      0.61       192
+
+avg / total       0.50      0.50      0.46       378
+
+[[ 41 145]
+ [ 40 152]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.31       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.47       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 45 141]
+ [ 47 145]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.24      0.32       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.50      0.50      0.47       378
+
+[[ 49 137]
+ [ 51 141]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.26      0.34       186
+        1.0       0.51      0.73      0.60       192
+
+avg / total       0.50      0.50      0.47       378
+
+[[ 58 128]
+ [ 69 123]]
+Accuracy 0.478835978836
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.31      0.37       186
+        1.0       0.49      0.64      0.56       192
+
+avg / total       0.47      0.48      0.46       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 36 150]
+ [ 38 154]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.19      0.28       186
+        1.0       0.51      0.80      0.62       192
+
+avg / total       0.50      0.50      0.45       378
+
+[[ 33 153]
+ [ 36 156]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.18      0.26       186
+        1.0       0.50      0.81      0.62       192
+
+avg / total       0.49      0.50      0.44       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 40 146]
+ [ 40 152]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.22      0.30       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.46       378
+
+[[ 42 144]
+ [ 44 148]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       186
+        1.0       0.51      0.77      0.61       192
+
+avg / total       0.50      0.50      0.46       378
+
+[[ 28 158]
+ [ 34 158]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.45      0.15      0.23       186
+        1.0       0.50      0.82      0.62       192
+
+avg / total       0.48      0.49      0.43       378
+
+ ###################################### 
+{'DAY_OFFSET': -1, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 46 140]
+ [ 44 148]]
+Accuracy 0.513227513228
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.25      0.33       186
+        1.0       0.51      0.77      0.62       192
+
+avg / total       0.51      0.51      0.48       378
+
+[[ 44 142]
+ [ 40 152]]
+Accuracy 0.518518518519
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       186
+        1.0       0.52      0.79      0.63       192
+
+avg / total       0.52      0.52      0.48       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 38 148]
+ [ 39 153]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.20      0.29       186
+        1.0       0.51      0.80      0.62       192
+
+avg / total       0.50      0.51      0.46       378
+
+[[ 41 145]
+ [ 40 152]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.31       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.47       378
+
+[[ 33 153]
+ [ 36 156]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.18      0.26       186
+        1.0       0.50      0.81      0.62       192
+
+avg / total       0.49      0.50      0.44       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 44 142]
+ [ 48 144]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.24      0.32       186
+        1.0       0.50      0.75      0.60       192
+
+avg / total       0.49      0.50      0.46       378
+
+[[ 47 139]
+ [ 46 146]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.25      0.34       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.51      0.51      0.48       378
+
+[[ 49 137]
+ [ 49 143]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.26      0.35       186
+        1.0       0.51      0.74      0.61       192
+
+avg / total       0.51      0.51      0.48       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 38 148]
+ [ 39 153]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.20      0.29       186
+        1.0       0.51      0.80      0.62       192
+
+avg / total       0.50      0.51      0.46       378
+
+[[ 41 145]
+ [ 40 152]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.31       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.47       378
+
+[[ 38 148]
+ [ 42 150]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.20      0.29       186
+        1.0       0.50      0.78      0.61       192
+
+avg / total       0.49      0.50      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 44 142]
+ [ 48 144]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.24      0.32       186
+        1.0       0.50      0.75      0.60       192
+
+avg / total       0.49      0.50      0.46       378
+
+[[ 47 139]
+ [ 46 146]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.25      0.34       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.51      0.51      0.48       378
+
+[[ 43 143]
+ [ 48 144]]
+Accuracy 0.494708994709
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.23      0.31       186
+        1.0       0.50      0.75      0.60       192
+
+avg / total       0.49      0.49      0.46       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 39 147]
+ [ 34 158]]
+Accuracy 0.521164021164
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.21      0.30       186
+        1.0       0.52      0.82      0.64       192
+
+avg / total       0.53      0.52      0.47       378
+
+[[ 36 150]
+ [ 33 159]]
+Accuracy 0.515873015873
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.19      0.28       186
+        1.0       0.51      0.83      0.63       192
+
+avg / total       0.52      0.52      0.46       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 38 148]
+ [ 39 153]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.20      0.29       186
+        1.0       0.51      0.80      0.62       192
+
+avg / total       0.50      0.51      0.46       378
+
+[[ 41 145]
+ [ 40 152]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.22      0.31       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.47       378
+
+[[ 48 138]
+ [ 48 144]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.26      0.34       186
+        1.0       0.51      0.75      0.61       192
+
+avg / total       0.51      0.51      0.48       378
+
+ ###################################### 
+{'DAY_OFFSET': 0, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 49 137]
+ [ 45 147]]
+Accuracy 0.518518518519
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.26      0.35       186
+        1.0       0.52      0.77      0.62       192
+
+avg / total       0.52      0.52      0.49       378
+
+[[ 43 143]
+ [ 40 152]]
+Accuracy 0.515873015873
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.23      0.32       186
+        1.0       0.52      0.79      0.62       192
+
+avg / total       0.52      0.52      0.47       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 43 143]
+ [ 32 160]]
+Accuracy 0.537037037037
+             precision    recall  f1-score   support
+
+        0.0       0.57      0.23      0.33       186
+        1.0       0.53      0.83      0.65       192
+
+avg / total       0.55      0.54      0.49       378
+
+[[ 42 144]
+ [ 34 158]]
+Accuracy 0.529100529101
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.23      0.32       186
+        1.0       0.52      0.82      0.64       192
+
+avg / total       0.54      0.53      0.48       378
+
+[[ 37 149]
+ [ 36 156]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.20      0.29       186
+        1.0       0.51      0.81      0.63       192
+
+avg / total       0.51      0.51      0.46       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 42 144]
+ [ 44 148]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       186
+        1.0       0.51      0.77      0.61       192
+
+avg / total       0.50      0.50      0.46       378
+
+[[ 46 140]
+ [ 46 146]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.25      0.33       186
+        1.0       0.51      0.76      0.61       192
+
+avg / total       0.51      0.51      0.47       378
+
+[[ 36 150]
+ [ 39 153]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.19      0.28       186
+        1.0       0.50      0.80      0.62       192
+
+avg / total       0.49      0.50      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 43 143]
+ [ 32 160]]
+Accuracy 0.537037037037
+             precision    recall  f1-score   support
+
+        0.0       0.57      0.23      0.33       186
+        1.0       0.53      0.83      0.65       192
+
+avg / total       0.55      0.54      0.49       378
+
+[[ 42 144]
+ [ 34 158]]
+Accuracy 0.529100529101
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.23      0.32       186
+        1.0       0.52      0.82      0.64       192
+
+avg / total       0.54      0.53      0.48       378
+
+[[ 28 158]
+ [ 29 163]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.15      0.23       186
+        1.0       0.51      0.85      0.64       192
+
+avg / total       0.50      0.51      0.44       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 42 144]
+ [ 44 148]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.23      0.31       186
+        1.0       0.51      0.77      0.61       192
+
+avg / total       0.50      0.50      0.46       378
+
+[[ 46 140]
+ [ 45 147]]
+Accuracy 0.510582010582
+             precision    recall  f1-score   support
+
+        0.0       0.51      0.25      0.33       186
+        1.0       0.51      0.77      0.61       192
+
+avg / total       0.51      0.51      0.48       378
+
+[[ 37 149]
+ [ 40 152]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.20      0.28       186
+        1.0       0.50      0.79      0.62       192
+
+avg / total       0.49      0.50      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 39 147]
+ [ 30 162]]
+Accuracy 0.531746031746
+             precision    recall  f1-score   support
+
+        0.0       0.57      0.21      0.31       186
+        1.0       0.52      0.84      0.65       192
+
+avg / total       0.54      0.53      0.48       378
+
+[[ 45 141]
+ [ 38 154]]
+Accuracy 0.526455026455
+             precision    recall  f1-score   support
+
+        0.0       0.54      0.24      0.33       186
+        1.0       0.52      0.80      0.63       192
+
+avg / total       0.53      0.53      0.49       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 39 147]
+ [ 31 161]]
+Accuracy 0.529100529101
+             precision    recall  f1-score   support
+
+        0.0       0.56      0.21      0.30       186
+        1.0       0.52      0.84      0.64       192
+
+avg / total       0.54      0.53      0.48       378
+
+[[ 42 144]
+ [ 34 158]]
+Accuracy 0.529100529101
+             precision    recall  f1-score   support
+
+        0.0       0.55      0.23      0.32       186
+        1.0       0.52      0.82      0.64       192
+
+avg / total       0.54      0.53      0.48       378
+
+[[ 32 154]
+ [ 32 160]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.17      0.26       186
+        1.0       0.51      0.83      0.63       192
+
+avg / total       0.50      0.51      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': 1, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 41 145]
+ [ 42 150]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       186
+        1.0       0.51      0.78      0.62       192
+
+avg / total       0.50      0.51      0.46       378
+
+[[ 40 146]
+ [ 44 148]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       186
+        1.0       0.50      0.77      0.61       192
+
+avg / total       0.49      0.50      0.46       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 41 145]
+ [ 36 156]]
+Accuracy 0.521164021164
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.22      0.31       186
+        1.0       0.52      0.81      0.63       192
+
+avg / total       0.53      0.52      0.47       378
+
+[[ 36 150]
+ [ 40 152]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.19      0.27       186
+        1.0       0.50      0.79      0.62       192
+
+avg / total       0.49      0.50      0.45       378
+
+[[ 38 148]
+ [ 40 152]]
+Accuracy 0.502645502646
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.20      0.29       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.50      0.50      0.46       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 40 146]
+ [ 44 148]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       186
+        1.0       0.50      0.77      0.61       192
+
+avg / total       0.49      0.50      0.46       378
+
+[[ 41 145]
+ [ 42 150]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       186
+        1.0       0.51      0.78      0.62       192
+
+avg / total       0.50      0.51      0.46       378
+
+[[ 38 148]
+ [ 44 148]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.46      0.20      0.28       186
+        1.0       0.50      0.77      0.61       192
+
+avg / total       0.48      0.49      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 41 145]
+ [ 36 156]]
+Accuracy 0.521164021164
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.22      0.31       186
+        1.0       0.52      0.81      0.63       192
+
+avg / total       0.53      0.52      0.47       378
+
+[[ 36 150]
+ [ 40 152]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.19      0.27       186
+        1.0       0.50      0.79      0.62       192
+
+avg / total       0.49      0.50      0.45       378
+
+[[ 44 142]
+ [ 40 152]]
+Accuracy 0.518518518519
+             precision    recall  f1-score   support
+
+        0.0       0.52      0.24      0.33       186
+        1.0       0.52      0.79      0.63       192
+
+avg / total       0.52      0.52      0.48       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': False}
+[[ 40 146]
+ [ 44 148]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       186
+        1.0       0.50      0.77      0.61       192
+
+avg / total       0.49      0.50      0.46       378
+
+[[ 41 145]
+ [ 42 150]]
+Accuracy 0.505291005291
+             precision    recall  f1-score   support
+
+        0.0       0.49      0.22      0.30       186
+        1.0       0.51      0.78      0.62       192
+
+avg / total       0.50      0.51      0.46       378
+
+[[ 37 149]
+ [ 40 152]]
+Accuracy 0.5
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.20      0.28       186
+        1.0       0.50      0.79      0.62       192
+
+avg / total       0.49      0.50      0.45       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': False}
+[[ 42 144]
+ [ 37 155]]
+Accuracy 0.521164021164
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.23      0.32       186
+        1.0       0.52      0.81      0.63       192
+
+avg / total       0.52      0.52      0.48       378
+
+[[ 44 142]
+ [ 50 142]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.24      0.31       186
+        1.0       0.50      0.74      0.60       192
+
+avg / total       0.48      0.49      0.46       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': False, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': False, 'ADD_SENTIMENT': False, 'ADD_RELATION': True}
+[[ 41 145]
+ [ 36 156]]
+Accuracy 0.521164021164
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.22      0.31       186
+        1.0       0.52      0.81      0.63       192
+
+avg / total       0.53      0.52      0.47       378
+
+[[ 36 150]
+ [ 41 151]]
+Accuracy 0.494708994709
+             precision    recall  f1-score   support
+
+        0.0       0.47      0.19      0.27       186
+        1.0       0.50      0.79      0.61       192
+
+avg / total       0.48      0.49      0.45       378
+
+[[ 40 146]
+ [ 44 148]]
+Accuracy 0.497354497354
+             precision    recall  f1-score   support
+
+        0.0       0.48      0.22      0.30       186
+        1.0       0.50      0.77      0.61       192
+
+avg / total       0.49      0.50      0.46       378
+
+ ###################################### 
+{'DAY_OFFSET': 2, 'ADD_DATE': True, 'DATA': 'data/Combined_NYT_Saved.csv', 'STEMMING': True, 'ADD_SENTIMENT': True, 'ADD_RELATION': True}
+[[ 40 146]
+ [ 40 152]]
+Accuracy 0.507936507937
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.22      0.30       186
+        1.0       0.51      0.79      0.62       192
+
+avg / total       0.51      0.51      0.46       378
+
+[[ 50 136]
+ [ 45 147]]
+Accuracy 0.521164021164
+             precision    recall  f1-score   support
+
+        0.0       0.53      0.27      0.36       186
+        1.0       0.52      0.77      0.62       192
+
+avg / total       0.52      0.52      0.49       378
+
+[[186   0]
+ [192   0]]
+Accuracy 0.492063492063
+             precision    recall  f1-score   support
+
+        0.0       0.49      1.00      0.66       186
+        1.0       0.00      0.00      0.00       192
+
+avg / total       0.24      0.49      0.32       378
+
