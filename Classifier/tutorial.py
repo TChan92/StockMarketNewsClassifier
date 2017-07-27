@@ -1,4 +1,5 @@
 import pandas as pd
+
 # from sklearn.feature_extraction.text import CountVectorizer
 # from sklearn.linear_model import LogisticRegression
 # from sklearn.metrics import accuracy_score
@@ -11,7 +12,7 @@ import pandas as pd
 #
 # # Split the data into test and training data
 # train = data[data['Date'] < '2015-01-01']
-# test = data[data['Date'] > '2014-12-31']
+# test = data[data['Date'] > '2015-12-31']
 #
 # # Grabs some data
 # example = train.iloc[3,10]
@@ -75,6 +76,29 @@ import pandas as pd
 # advancedtest = advancedvectorizer.transform(testheadlines)
 # advpredictions = advancedmodel.predict(advancedtest)
 # print pd.crosstab(test["Label"], advpredictions, rownames=["Actual"], colnames=["Predicted"])
+WORLD_NEWS = '../data/Combined_WorldNews_DJIA.csv'
+ECONOMICS = '../data/Combined_Economics_Saved.csv'
+STOCKS = '../data/Combined_stocks_Saved.csv'
+US_NEWS = '../data/Combined_news_Saved.csv'
+TECH = '../data/Combined_technology_Saved.csv'
+NY = '../data/Combined_NYT_Saved.csv'
 
-data = pd.read_csv('../data/Combined_Economics_Saved.csv', sep=',')
-print data['Date']
+data = pd.read_csv(NY, error_bad_lines=False)
+train = data[data['Date'] < '2015-01-01']
+data_pos = train[train['Label'] == 1]
+data_neg = train[train['Label'] == 0]
+train_pos = data_pos.shape[0]
+train_neg = data_neg.shape[0]
+print 'TRAIN'
+print float(train_pos) / float(train_pos+train_neg)
+
+test = data[data['Date'] > '2015-01-01']
+data_pos = test[test['Label'] == 1]
+data_neg = test[test['Label'] == 0]
+test_pos = data_pos.shape[0]
+test_neg = data_neg.shape[0]
+print 'TEST'
+print float(test_pos) / float(test_pos+test_neg)
+
+print 'FINAL'
+print float(train_pos + test_pos) / float(train_pos + test_pos + test_neg +train_neg)

@@ -18,10 +18,10 @@ NY = 'data/Combined_NYT_Saved.csv'
 
 '''Calling Code'''
 config = {
-	"DATA": NY,
-	"DAY_OFFSET": 0,
+	"DATA": WORLD_NEWS,
+	"DAY_OFFSET": -1,
 	"ADD_SENTIMENT": False,
-	"STEMMING": True,
+	"STEMMING": False,
 	"ADD_DATE": True,
 	"ADD_RELATION": False
 }
