@@ -83,7 +83,8 @@ for D in DATA_SETS:
 			"ADD_DATE": True,
 			"ADD_RELATION": True
 		}
-		CONFIGS = [config1, config2, config3, config4, config5, config6, config7]
+		# CONFIGS = [config1, config2, config3, config4, config5, config6, config7]
+		CONFIGS = [config5, config7]
 		for C in CONFIGS:
 			print_config(C)
 			preprocess = PP.Preprocess(C)

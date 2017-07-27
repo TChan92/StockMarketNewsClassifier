@@ -91,7 +91,7 @@ class Preprocess():
 			date_list = []
 			for row in data['Date']:
 				row = row.split('-')
-				int_row = [int(a) for a in row]
+				int_row = [int(a) for a in [row[1],row[2]]]
 				date_list.append(int_row)
 			for row in range(0, len(data_list)):
 				data_list[row] = [data_list[row]] + date_list[row]
@@ -144,7 +144,7 @@ class Preprocess():
 		num_headlines = data.shape[1] - 2
 
 		if self.add_date:
-			self.extra_columns += 3
+			self.extra_columns += 2
 		if self.add_relation:
 			self.extra_columns += 1
 			self.add_relation_metric(data)
