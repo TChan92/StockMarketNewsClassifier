@@ -23,7 +23,7 @@ config = {
 	"ADD_SENTIMENT": False,
 	"STEMMING": False,
 	"ADD_DATE": True,
-	"ADD_RELATION": False
+	"ADD_RELATION": True
 }
 preprocess = PP.Preprocess(config)
 results = preprocess.get_results()

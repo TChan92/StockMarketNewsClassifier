@@ -83,7 +83,7 @@ US_NEWS = '../data/Combined_news_Saved.csv'
 TECH = '../data/Combined_technology_Saved.csv'
 NY = '../data/Combined_NYT_Saved.csv'
 
-data = pd.read_csv(NY, error_bad_lines=False)
+data = pd.read_csv(TECH, error_bad_lines=False)
 train = data[data['Date'] < '2015-01-01']
 data_pos = train[train['Label'] == 1]
 data_neg = train[train['Label'] == 0]
