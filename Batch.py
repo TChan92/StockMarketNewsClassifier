@@ -22,7 +22,8 @@ STOCKS = 'data/Combined_stocks_Saved.csv'
 US_NEWS = 'data/Combined_news_Saved.csv'
 TECH = 'data/Combined_technology_Saved.csv'
 NY = 'data/Combined_NYT_Saved.csv'
-DATA_SETS = [WORLD_NEWS, ECONOMICS, STOCKS, US_NEWS, TECH, NY]
+# DATA_SETS = [WORLD_NEWS, ECONOMICS, STOCKS, US_NEWS, TECH, NY]
+DATA_SETS = [STOCKS]
 OFFSETS = [-2, -1, 0, +1, +2]
 
 for D in DATA_SETS:
@@ -83,8 +84,8 @@ for D in DATA_SETS:
 			"ADD_DATE": True,
 			"ADD_RELATION": True
 		}
-		# CONFIGS = [config1, config2, config3, config4, config5, config6, config7]
-		CONFIGS = [config5, config7]
+		CONFIGS = [config1, config2, config3, config4, config5, config6, config7]
+		# CONFIGS = [config5, config7]
 		for C in CONFIGS:
 			print_config(C)
 			preprocess = PP.Preprocess(C)

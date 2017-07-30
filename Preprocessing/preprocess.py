@@ -155,6 +155,7 @@ class Preprocess():
 		# offset headlines by n days
 		data_pos, data_neg = self.offset_data(num_of_days, data_pos, data_neg, num_headlines)
 
+		# 2015-01-01 FOR ALL DATASETS EXCEPT FOR STOCKS
 		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
 		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 
