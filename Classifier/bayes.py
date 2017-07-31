@@ -8,13 +8,13 @@ import re
 import math as m
 import pandas as pd
 
-# Grab our data into pandas dataframe
+# Grab our Data into pandas dataframe
 stemmer = stem.PorterStemmer()
-data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
+data = pd.read_csv('../Data/Combined_WorldNews_DJIA.csv')
 data_pos = data[data['Label'] == 1]
 data_neg = data[data['Label'] == 0]
 
-# Put the data into a vectors
+# Put the Data into a vectors
 data_pos_list = []
 data_neg_list = []
 for row in range(0, len(data_pos.index)):
@@ -33,7 +33,7 @@ data_test = data_pos_list[852:] + data_neg_list[740:]
 y_train = np.append(np.ones((1,852)), (np.zeros((1,740))))
 y_test = np.append(np.ones((1,213)), np.zeros((1,184)))
 
-# Process the data
+# Process the Data
 vectorizer = CountVectorizer(lowercase=True, stop_words='english',  max_df=1.0, min_df=1, max_features=None,  binary=True, ngram_range=(2,2))
 X_train = vectorizer.fit_transform(data_train)
 X_test = vectorizer.transform(data_test)

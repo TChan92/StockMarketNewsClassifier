@@ -139,7 +139,7 @@ class Preprocess():
 		data['Relation'] = relation_sums
 
 	def preprocess(self):
-		# Grab our data into pandas dataframe
+		# Grab our Data into pandas dataframe
 		data = pd.read_csv(self.data, error_bad_lines=False)
 		num_headlines = data.shape[1] - 2
 
@@ -159,13 +159,13 @@ class Preprocess():
 		pos_split = len(data_pos[data_pos['Date'] < '2015-01-01'])
 		neg_split = len(data_neg[data_neg['Date'] < '2015-01-01'])
 
-		# Put the data into a vectors
+		# Put the Data into a vectors
 		# Stem and remove the b'' surrounding every headline
 		# Also turns unicode into strings
 		data_pos_list = self.extract_data_from_frame(data_pos, num_headlines)
 		data_neg_list = self.extract_data_from_frame(data_neg, num_headlines)
 
-		# Split the data
+		# Split the Data
 		data_train = data_pos_list[:pos_split] + data_neg_list[:neg_split]
 		data_test = data_pos_list[pos_split:] + data_neg_list[neg_split:]
 		y_train = np.append(np.ones((1, pos_split)), (np.zeros((1, neg_split))))

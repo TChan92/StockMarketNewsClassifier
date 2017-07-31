@@ -7,22 +7,22 @@ import pandas as pd
 # ### Tutorial Code ###
 # # Follow along here : https://www.kaggle.com/ndrewgele/omg-nlp-with-the-djia-and-reddit
 #
-# # Grab the data
-# data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
+# # Grab the Data
+# Data = pd.read_csv('../Data/Combined_WorldNews_DJIA.csv')
 #
-# # Split the data into test and training data
-# train = data[data['Date'] < '2015-01-01']
-# test = data[data['Date'] > '2015-12-31']
+# # Split the Data into test and training Data
+# train = Data[Data['Date'] < '2015-01-01']
+# test = Data[Data['Date'] > '2015-12-31']
 #
-# # Grabs some data
+# # Grabs some Data
 # example = train.iloc[3,10]
 # #print(example)
 #
-# # Transform all the words in the data to lower case
+# # Transform all the words in the Data to lower case
 # example2 = example.lower()
 # #print(example2)
 #
-# # Turn the data into a vector
+# # Turn the Data into a vector
 # example3 = CountVectorizer().build_tokenizer()(example2)
 # #print(example3)
 #
@@ -76,12 +76,12 @@ import pandas as pd
 # advancedtest = advancedvectorizer.transform(testheadlines)
 # advpredictions = advancedmodel.predict(advancedtest)
 # print pd.crosstab(test["Label"], advpredictions, rownames=["Actual"], colnames=["Predicted"])
-WORLD_NEWS = '../data/Combined_WorldNews_DJIA.csv'
-ECONOMICS = '../data/Combined_Economics_Saved.csv'
-STOCKS = '../data/Combined_stocks_Saved.csv'
-US_NEWS = '../data/Combined_news_Saved.csv'
-TECH = '../data/Combined_technology_Saved.csv'
-NY = '../data/Combined_NYT_Saved.csv'
+WORLD_NEWS = '../Data/Combined_WorldNews_DJIA.csv'
+ECONOMICS = '../Data/Combined_Economics_Saved.csv'
+STOCKS = '../Data/Combined_stocks_Saved.csv'
+US_NEWS = '../Data/Combined_news_Saved.csv'
+TECH = '../Data/Combined_technology_Saved.csv'
+NY = '../Data/Combined_NYT_Saved.csv'
 
 data = pd.read_csv(TECH, error_bad_lines=False)
 train = data[data['Date'] < '2015-01-01']
