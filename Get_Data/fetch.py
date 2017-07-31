@@ -39,11 +39,11 @@ SUBREDDIT = "Economics"
 NUM_HEADLINES = 10
 
 subreddit = get_reddit().subreddit(SUBREDDIT)
-data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
+data = pd.read_csv('../Data/Combined_WorldNews_DJIA.csv')
 dates = list(data["Date"])
 labels = list(data["Label"])
 incorrectly_formatted = []
-with open("../data/Combined_" + SUBREDDIT + ".csv", 'w') as f:
+with open("../Data/Combined_" + SUBREDDIT + ".csv", 'w') as f:
 	f.write(create_header(NUM_HEADLINES))
 	for i in range(0, len(dates)):
 		d1 = date_to_timestamp(dates[i] + "-00:00:00")

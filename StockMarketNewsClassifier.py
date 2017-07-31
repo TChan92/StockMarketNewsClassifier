@@ -8,13 +8,13 @@ import numpy as np
 from sklearn import svm
 from sklearn.naive_bayes import MultinomialNB
 
-WORLD_NEWS = 'data/Combined_WorldNews_DJIA.csv'
-ECONOMICS = 'data/Combined_Economics_Saved.csv'
-STOCKS = 'data/Combined_stocks_Saved.csv'
-US_NEWS = 'data/Combined_news_Saved.csv'
-TECH = 'data/Combined_technology_Saved.csv'
-TEST = 'data/test.csv'
-NY = 'data/Combined_NYT_Saved.csv'
+WORLD_NEWS = 'Data/Combined_WorldNews_DJIA.csv'
+ECONOMICS = 'Data/Combined_Economics_Saved.csv'
+STOCKS = 'Data/Combined_stocks_Saved.csv'
+US_NEWS = 'Data/Combined_news_Saved.csv'
+TECH = 'Data/Combined_technology_Saved.csv'
+TEST = 'Data/test.csv'
+NY = 'Data/Combined_NYT_Saved.csv'
 
 '''Calling Code'''
 config = {
@@ -36,7 +36,7 @@ params1 = {
 	"test_x": data_test,
 	"test_y": y_test,
 	"model": clf,
-	"memento": 'data/demo.pkl'
+	"memento": 'Data/demo.pkl'
 }
 CL.Classifier(params1)
 
@@ -47,7 +47,7 @@ params1 = {
 	"test_x": data_test,
 	"test_y": y_test,
 	"model": clf,
-	"memento": 'data/demo.pkl'
+	"memento": 'Data/demo.pkl'
 }
 CL.Classifier(params1)
 
@@ -58,6 +58,6 @@ params1 = {
 	"test_x": data_test,
 	"test_y": y_test,
 	"model": clf,
-	"memento": 'data/demo.pkl'
+	"memento": 'Data/demo.pkl'
 }
 CL.Classifier(params1)

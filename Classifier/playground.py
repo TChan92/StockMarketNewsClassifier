@@ -6,15 +6,15 @@ from sklearn import svm
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
-# Grab the data
-data = pd.read_csv('../data/Combined_WorldNews_DJIA.csv')
+# Grab the Data
+data = pd.read_csv('../Data/Combined_WorldNews_DJIA.csv')
 data_pos = data[data['Label'] == 1]
 data_neg = data[data['Label'] == 0]
 
 data_neg = shuffle(data_neg)
 data_pos = shuffle(data_pos)
 
-# Split the data into test and training data
+# Split the Data into test and training Data
 train = pd.concat([data_pos[0:852], data_neg[0:740]])
 test = pd.concat([data_pos[852:], data_neg[740:]])
 

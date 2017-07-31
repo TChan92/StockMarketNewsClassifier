@@ -16,12 +16,12 @@ orig_stdout = sys.stdout
 f = open('BATCH_OUTPUT.txt', 'w')
 sys.stdout = f
 
-WORLD_NEWS = 'data/Combined_WorldNews_DJIA.csv'
-ECONOMICS = 'data/Combined_Economics_Saved.csv'
-STOCKS = 'data/Combined_stocks_Saved.csv'
-US_NEWS = 'data/Combined_news_Saved.csv'
-TECH = 'data/Combined_technology_Saved.csv'
-NY = 'data/Combined_NYT_Saved.csv'
+WORLD_NEWS = 'Data/Combined_WorldNews_DJIA.csv'
+ECONOMICS = 'Data/Combined_Economics_Saved.csv'
+STOCKS = 'Data/Combined_stocks_Saved.csv'
+US_NEWS = 'Data/Combined_news_Saved.csv'
+TECH = 'Data/Combined_technology_Saved.csv'
+NY = 'Data/Combined_NYT_Saved.csv'
 # DATA_SETS = [WORLD_NEWS, ECONOMICS, STOCKS, US_NEWS, TECH, NY]
 DATA_SETS = [STOCKS]
 OFFSETS = [-2, -1, 0, +1, +2]
@@ -99,7 +99,7 @@ for D in DATA_SETS:
 				"test_x": data_test,
 				"test_y": y_test,
 				"model": clf,
-				"memento": 'data/demo.pkl'
+				"memento": 'Data/demo.pkl'
 			}
 			CL.Classifier(params1)
 
@@ -110,7 +110,7 @@ for D in DATA_SETS:
 				"test_x": data_test,
 				"test_y": y_test,
 				"model": clf,
-				"memento": 'data/demo.pkl'
+				"memento": 'Data/demo.pkl'
 			}
 			CL.Classifier(params1)
 
@@ -121,7 +121,7 @@ for D in DATA_SETS:
 				"test_x": data_test,
 				"test_y": y_test,
 				"model": clf,
-				"memento": 'data/demo.pkl'
+				"memento": 'Data/demo.pkl'
 			}
 			CL.Classifier(params1)
 

@@ -14,7 +14,7 @@
 \usepackage[hyperref]{acl2017}
 \usepackage{times}
 \usepackage{latexsym}
-
+\usepackage{caption}
 \usepackage{url}
 
 \aclfinalcopy % Uncomment this line for the final submission
@@ -122,7 +122,7 @@ After receiving feedback, the baseline method was extended in an aim to improve 
 A problem with Reddit data is that several of the subreddits were newer, or had less than 25 posts per day. This resulted in the new data sets having slightly different distributions and sizes. This limited the number of subreddits that could be scraped for data. For example, an attempt was made to scrape /r/stocks. Even at a small 10 headlines per day, only 667 days could be scraped due to the infrequency of posts.
 
 \begin{center}
-Table 1. Data Set Info
+\captionof{table}{Data Set Info}
 \begin{tabular}{ |c|c|c|c| }
  \hline
  Source & Rows & \small{Headlines} & \% Class = 1 \\
@@ -140,7 +140,7 @@ Where /r/ means the data was scraped from Reddit's API. For the NY Times data se
 When forming the testing and training sets, the data was split by date as listed in section 2.1. This resulted in the test and training data sets having slightly different distributions.
 
 \begin{center}
-Table 2. Class Distribution: Test and Training Sets
+\captionof{table}{Class Distribution: Test and Training Sets}
 \begin{tabular}{ |c|c|c| }
  \hline
  Source & \% Class = 1 (Train) & \% Class = 1 (Test)\\
@@ -166,7 +166,7 @@ SGD & Stochastic Gradient Descent
 
 \subsection{Baseline Results}
 \begin{center}
-Table 3. Accuracy on World News (0 Day Offset)
+\captionof{table}{Accuracy on World News (0 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -183,7 +183,7 @@ Table 3. Accuracy on World News (0 Day Offset)
 \end{center}
 
 \begin{center}
-Table 4. Metrics for SGD on World News with Stemming and Sentiment
+\captionof{table}{Metrics for SGD on World News with Stemming and Sentiment}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   Class & Precision & Recall & F1-Score\\
@@ -196,7 +196,7 @@ Table 4. Metrics for SGD on World News with Stemming and Sentiment
 \end{center}
 
 \begin{center}
-Table 5. Most Positive Features for SGD on World News with Stemming and Sentiment
+\captionof{table}{Most Positive Features for SGD on World News with Stemming and Sentiment}
 \begin{tabular}{ |c|c| }
  \hline
  Rank & N-Gram\\
@@ -227,7 +227,7 @@ Table 5 displays the N-Grams which had the highest weighting in the classifier. 
 \subsection{Extended Results}
 
 \begin{center}
-Table 6. Accuracy on World News (0 Day Offset) Extended
+\captionof{table}{Accuracy on World News (0 Day Offset) Extended}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -242,7 +242,7 @@ Table 6. Accuracy on World News (0 Day Offset) Extended
 \end{center}
 
 \begin{center}
-Table 7. Accuracy on Economics (0 Day Offset)
+\captionof{table}{Accuracy on Economics (0 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -265,7 +265,7 @@ Table 7. Accuracy on Economics (0 Day Offset)
 \end{center}
 
 \begin{center}
-Table 8. Accuracy on Technology (0 Day Offset)
+\captionof{table}{Accuracy on Technology (0 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -287,9 +287,9 @@ Table 8. Accuracy on Technology (0 Day Offset)
 \end{tabular}
 \end{center}
 
-
+\newpage
 \begin{center}
-Table 9. Accuracy on News (USA) (0 Day Offset)
+\captionof{table}{Accuracy on News (USA) (0 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -313,7 +313,7 @@ Table 9. Accuracy on News (USA) (0 Day Offset)
 
 
 \begin{center}
-Table 10. Accuracy on New York Times (0 Day Offset)\\
+\captionof{table}{Accuracy on New York Times (0 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -336,7 +336,7 @@ Table 10. Accuracy on New York Times (0 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 11. Metrics for Logistic Regression on World News with Date (-1 Day Offset)
+\captionof{table}{Metrics for Logistic Regression on World News with Date (-1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   Class & Precision & Recall & F1-Score\\
@@ -349,7 +349,7 @@ Table 11. Metrics for Logistic Regression on World News with Date (-1 Day Offset
 \end{center}
 
 \begin{center}
-Table 12. Most Positive Features for Logistic Regression on World News with Date (-1 Day Offset)\\
+\captionof{table}{Most Positive Features for Logistic Regression on World News with Date (-1 Day Offset)}
 \begin{tabular}{ |c|c| }
  \hline
  Rank & N-Gram\\
@@ -368,8 +368,9 @@ Table 12. Most Positive Features for Logistic Regression on World News with Date
 \end{tabular}
 \end{center}
 
+\vspace{5mm}
 \begin{center}
-Table 13. Most Negative Features for Logistic Regression on World News with Date (-1 Day Offset)\\
+\captionof{table}{Most Negative Features for Logistic Regression on World News with Date (-1 Day Offset)}
 \begin{tabular}{ |c|c| }
  \hline
  Rank & N-Gram\\
@@ -404,9 +405,9 @@ Initially it was hypothesized that our classifiers had approached an accuracy li
 It is interesting that a -1 day offset performed well for the /r/worldnews. A possibility for a -1 offset being beneficial would be if insider trading is very prevalent and causes changes in stock price before there is any news on it. Another possibility is that stock prices are affected more heavily by rumours, rather than news.\\
 
 \section{Conclusion}
-It is much more difficult than we anticipated to try and predict the stock market based off of news headlines. We were able to achieve a final accuracy of 58.8\%. While not an amazing accuracy, it is fairly strong considering the difficulty of the problem, and weaknesses of the reddit data set.\\
+It is much more difficult than we anticipated to try and predict the stock market based off of news headlines. We were able to achieve a final accuracy of 58.7\%. While not an amazing accuracy, it is fairly strong considering the difficulty of the problem, and weaknesses of the reddit data set.\\
 
-Stemming and sentiment from the baseline gave a decent accuracy boost of around 1.5\%. Disappointingly, the extended methods were only able to boost the accuracy at best from 57.8\% to 58.8\%. The date attribute seemed actually helped in most cases which indicates that the time of year be a key attribute. Our most complex feature - the relation attribute - did not provide much of an accuracy boost. This is most likely due to the size of the text that the cosine similarity was taken between. Since the features contained 25 headlines, the bi-gram overlap was usually quite small. Shifting the data set overall helped, with a -1 offset being a helpful preprocessing step. \\
+Stemming and sentiment from the baseline gave a decent accuracy boost of around 1.5\%. Disappointingly, the extended methods were only able to boost the accuracy at best from 57.8\% to 58.7\%. The date attribute seemed actually helped in most cases which indicates that the time of year be a key attribute. Our most complex feature - the relation attribute - did not provide much of an accuracy boost. This is most likely due to the size of the text that the cosine similarity was taken between. Since the features contained 25 headlines, the bi-gram overlap was usually quite small. Shifting the data set overall helped, with a -1 offset being a helpful preprocessing step. \\
 
 One of the interesting results is that the world news data set ended up being the most accurate. This went against our initial ideas that other subreddits may contain more pertinent information. Other data sets contained a mix of headlines and personal user content. The personal content usually consisted of user discussions, or question-answer type posts. These types of posts added noise to the data set. While /r/worldnews did not always contain pertinent information, all of the posts are at least news headlines. The American news subreddit - /r/news - underperformed and was not able to beat the world new data set.\\
 
@@ -424,35 +425,35 @@ Throughout this project we learned many things:
 \subsection{Future Work}
 If the project is to be continued, it would be interesting to gather a larger data set.. With a larger data set, it should be viable to use some sort of LSTM. Since, LSTMs are good at remembering things for long or short periods of time. This makes them useful in time series prediction. It should be able to use this property to predict short and long term trends within the market. Also, for actually making money off the stock market, it would be necessary to use some sort of Named Entity Recognition system to recognize key stocks. It may also be worth experimenting with more dimensions in the sentiment analysis. Analyzing the quality of the news headlines could also help, by using stance detection and click-bait detection to see how reliable certain articles are before their headlines are used.\\
 
-Currently our data set has only two classes: DJIA rise/stayed the same and DJIA falls. It could be worth investigating if adding a third class would help. In this case the class 1 (rise/stayed the same) would be split. There is a danger of lowering the accuracy, because this would
+Currently our data set has only two classes: DJIA rise/stayed the same and DJIA falls. It could be worth investigating if adding a third class would help. In this case the class 1 (rise/stayed the same) would be split. There is a danger of lowering the accuracy, because this would mean the classifier would have to predict the classes more clearly.
 
 \subsection{Societal Implications}
 It's difficult to imagine that a perfect stock market classifier would ever be possible due to the many factors that have to be taken into account. Assuming that it could be perfected, it would have some significant societal implications. If a group is able to secretly perfect this classifier  then they would be able to make large profits off of it. Considering that it would be likely that this group was wealthy enough to put a lot of it into research, then it would mean that the rich were getting richer. But if the group did share this information, then it would quickly be adapted by many people. It would mean that only the most promising stocks would be heavily invested in, and their stock price would increase sharply,  guaranteeing that the classifier is correct. So a classifier which is good enough may become self-fulfilling. An important thing to note though, is that if the stock market classifier worked off of news, then there would likely be a significant industry based on generating fake news to mess up competitors. A side effect of this would be it would be harder for people to know which news sources are reliable.
 
 \subsection{Final Thoughts}
- Overall the project was a success. It was interesting and unexpected for locations outside the USA to be such important headline features. 58.7\% accuracy is not outstanding, but it was able to exceed a couple of the related work papers. We are still hopeful that this project can someday be continued, and experimented with other more complex classifiers such as neural networks.
+Overall the project was a success. It was interesting and unexpected for locations outside the USA to be such important headline features. 58.7\% accuracy is not outstanding, but it was able to exceed a couple of the related work papers. We are still hopeful that this project can someday be continued, and experimented with other more complex classifiers such as neural networks.
 
 
 \subsection{Contributions}
-The original plan was to divide the main body of work into 3 parts: preprocessing, processing and results gathering. Each team member was to work on two of 3 parts. As the project progressed, this structure fell apart. In the end, team members contributed to each of the three sections as well as milestone items such as the presentation and proposal.\\
+The original plan was to divide the main body of work into 3 parts: preprocessing, processing and results gathering. Each team member was to work on two of 3 parts. As the project progressed, this structure fell apart. In the end, team members contributed to each of the three sections as well as milestone items.\\
 
 \begin{itemize}
 \item Tim: Helped with proposal, wrote the original pre-processor, helped with processing the data and trying different classifiers, worked on presentation slides and presented, helped with writing final report.\\
 
-\item Adam: Wrote the processor code. Added additional features to the preprocessor for the date and relation attributes. Worked on the presentation slides and presented. Helped writing the final report, proposal and presention. Wrote the python tool to fetch data from Reddit. Scrape the Economics and News (USA) data sets.\\
+\item Adam: Wrote the processor code. Added additional features to the preprocessor for the date and relation attributes. Worked on the presentation slides and presented. Helped writing the final report, proposal and presentation. Wrote the python tool to fetch data from Reddit. Scrape the Economics and News (USA) data sets.\\
 
 \item John: Helped with proposal, helped with pre-processor. Wrote demo code for presentation. Worked on generating dataset from New York Times. Assist in processor code. Help writing the final report.\\
 
-\item Tao: Helped with proposal. Worked on generating dataset from various subreddits. Helped writing the final report.
+\item Tao: Helped with proposal. Worked on generating dataset from the technology subreddit. Helped writing the final report.
 
-\item Lucas: dsadsa
+\item Lucas: Helped with proposal.Worked on the presentation slides and presented.Helped writing the final report.
 \end{itemize}
 
 
 \section{Appendix A. Shifted WorldNews Data}
 
 \begin{center}
-Table 14. Accuracy on World News (-2 Day Offset)\\
+\captionof{table}{Accuracy on World News (-2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -474,8 +475,9 @@ Table 14. Accuracy on World News (-2 Day Offset)\\
 \end{tabular}
 \end{center}
 
+\vspace{40mm}
 \begin{center}
-Table 15. Accuracy on World News (-1 Day Offset)\\
+\captionof{table}{Accuracy on World News (-1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -498,7 +500,7 @@ Table 15. Accuracy on World News (-1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 16. Accuracy on World News (+1 Day Offset)\\
+\captionof{table}{Accuracy on World News (+1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -521,7 +523,7 @@ Table 16. Accuracy on World News (+1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 17. Accuracy on World News (+2 Day Offset)\\
+\captionof{table}{Accuracy on World News (+2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -543,9 +545,10 @@ Table 17. Accuracy on World News (+2 Day Offset)\\
 \end{tabular}
 \end{center}
 
+\newpage
 \section{Appendix B. Shifted Economics Data}
 \begin{center}
-Table 18. Accuracy on Economics (-2 Day Offset)\\
+\captionof{table}{Accuracy on Economics (-2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -568,7 +571,7 @@ Table 18. Accuracy on Economics (-2 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 19. Accuracy on Economics (-1 Day Offset)\\
+\captionof{table}{Accuracy on Economics (-1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -591,7 +594,7 @@ Table 19. Accuracy on Economics (-1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 20. Accuracy on Economics (+1 Day Offset)\\
+\captionof{table}{Accuracy on Economics (+1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -614,7 +617,8 @@ Table 20. Accuracy on Economics (+1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 21. Accuracy on Economics (+2 Day Offset)\\
+\vspace{40mm}
+\captionof{table}{Accuracy on Economics (+2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -638,7 +642,7 @@ Table 21. Accuracy on Economics (+2 Day Offset)\\
 
 \section{Appendix C. Shifted Technology Data}
 \begin{center}
-Table 22. Accuracy on Technology (-2 Day Offset)\\
+\captionof{table}{Accuracy on Technology (-2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -661,7 +665,7 @@ Table 22. Accuracy on Technology (-2 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 23. Accuracy on Technology (-1 Day Offset)\\
+\captionof{table}{Accuracy on Technology (-1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -683,8 +687,9 @@ Table 23. Accuracy on Technology (-1 Day Offset)\\
 \end{tabular}
 \end{center}
 
+\newpage
 \begin{center}
-Table 24. Accuracy on Technology (+1 Day Offset)\\
+\captionof{table}{Accuracy on Technology (+1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -707,7 +712,7 @@ Table 24. Accuracy on Technology (+1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 25. Accuracy on Technology (+2 Day Offset)\\
+\captionof{table}{Accuracy on Technology (+2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -731,7 +736,7 @@ Table 25. Accuracy on Technology (+2 Day Offset)\\
 
 \section{Appendix D. Shifted News (USA) Data}
 \begin{center}
-Table 26. Accuracy on News (USA) (-2 Day Offset)\\
+\captionof{table}{Accuracy on News (USA) (-2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -753,8 +758,9 @@ Table 26. Accuracy on News (USA) (-2 Day Offset)\\
 \end{tabular}
 \end{center}
 
+\vspace{40mm}
 \begin{center}
-Table 27. Accuracy on News (USA) (-1 Day Offset)\\
+\captionof{table}{Accuracy on News (USA) (-1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -777,7 +783,7 @@ Table 27. Accuracy on News (USA) (-1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 28. Accuracy on News (USA) (+1 Day Offset)\\
+\captionof{table}{Accuracy on News (USA) (+1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -800,7 +806,7 @@ Table 28. Accuracy on News (USA) (+1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 29. Accuracy on News (USA) (+2 Day Offset)\\
+\captionof{table}{Accuracy on News (USA) (+2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -822,9 +828,10 @@ Table 29. Accuracy on News (USA) (+2 Day Offset)\\
 \end{tabular}
 \end{center}
 
+\newpage
 \section{Appendix E. Shifted New York Times Data}
 \begin{center}
-Table 30. Accuracy on New York Times-2 Day Offset)\\
+\captionof{table}{Accuracy on New York Times-2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -847,7 +854,7 @@ Table 30. Accuracy on New York Times-2 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 31. Accuracy on New York Times (-1 Day Offset)\\
+\captionof{table}{Accuracy on New York Times (-1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -870,7 +877,7 @@ Table 31. Accuracy on New York Times (-1 Day Offset)\\
 \end{center}
 
 \begin{center}
-Table 32. Accuracy on New York Times (+1 Day Offset)\\
+\captionof{table}{Accuracy on New York Times (+1 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
@@ -892,8 +899,9 @@ Table 32. Accuracy on New York Times (+1 Day Offset)\\
 \end{tabular}
 \end{center}
 
+\vspace{40mm}
 \begin{center}
-Table 33. Accuracy on New York Times (+2 Day Offset)\\
+\captionof{table}{Accuracy on New York Times (+2 Day Offset)}
 \begin{tabular}{ |c|c|c|c| }
  \hline
   & LR & SVM & SGD \\
